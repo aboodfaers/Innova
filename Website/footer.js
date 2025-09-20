@@ -11,7 +11,7 @@ if (footerContainer) {
         <a href="https://www.instagram.com/innovahu" target="_blank"><i class="fab fa-instagram"></i> إنستقرام</a>
       </div>
       <p>تم التصميم والتطوير بواسطة Innova Team - جامعة الحسين بن طلال</p>
-      <p>© 2025 PDF_AHU - جميع الحقوق محفوظة</p>
+      <p>© 2025 Innova Team - جميع الحقوق محفوظة</p>
     </footer>
   `;
 }
