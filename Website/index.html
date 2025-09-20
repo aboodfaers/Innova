@@ -1,187 +1,10 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
   <meta charset="UTF-8" />
   <title>Marja3i_AHU</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background: url("images/backgrounde.png") no-repeat center center fixed;
-      background-size: cover;
-      color: black;
-      position: relative;
-      min-height: 100vh;
-    }
-
-    .overlay {
-      background-color: rgba(255, 255, 255, 0.1);
-      min-height: 100vh;
-      padding: 20px;
-      padding-bottom: 120px;
-      box-sizing: border-box;
-    }
-
-    .footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
-      padding: 10px 0;
-      background-color: rgba(255, 255, 255, 0.5);
-      z-index: 100;
-      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(6px);
-      border-top: 1px solid rgba(0, 0, 0, 0.05);
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      font-weight: bold;
-    }
-
-    .search-box {
-      position: relative;
-      display: flex;
-      align-items: center;
-      border: 1px solid black;
-      border-radius: 20px;
-      padding: 10px 20px;
-      background: white;
-      max-width: 400px;
-      flex-grow: 1;
-    }
-
-    .search-box input {
-      border: none;
-      outline: none;
-      padding: 5px;
-      background: transparent;
-      width: 100%;
-      font-size: 16px;
-    }
-
-
-    #search-results {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      left: 0;
-      background-color: rgba(255, 255, 255, 0.95);
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      max-height: 220px;
-      overflow-y: auto;
-      margin-top: 5px;
-      z-index: 1000;
-      text-align: right;
-      padding: 10px 15px;
-      font-size: 16px;
-      color: #000;
-      font-weight: bold;
-    }
-
-    #search-results p {
-      color: red;
-      font-weight: bold;
-      margin: 10px 0;
-    }
-
-    #search-results a {
-      display: block;
-      margin: 8px 0;
-      color: #007bff;
-      text-decoration: none;
-      padding: 8px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
-      cursor: pointer;
-    }
-
-    #search-results a:hover {
-      background-color: #e6f0ff;
-      color: #003d99;
-    }
-
-    .main-title {
-      text-align: center;
-      font-size: 40px;
-      margin: 77px 0 140px;
-      font-weight: bold;
-      background-color: rgba(255, 255, 255, 0.9);
-      display: inline-block;
-      padding: 15px 35px;
-      border-radius: 20px;
-    }
-
-    .buttons-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 90px;
-    }
-
-    .row {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 50px;
-      margin-bottom: 80px;
-    }
-
-    .button {
-      background-color: rgba(255, 255, 255, 0.9);
-      border-radius: 30px;
-      padding: 25px 35px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      font-size: 22px;
-      font-weight: bold;
-      cursor: pointer;
-      min-width: 165px;
-      text-align: center;
-    }
-
-    .button2 {
-      background-color: rgba(255, 255, 255, 0.7);
-      border-radius: 10px;
-      padding: 6px 5px;
-      font-size: 27px;
-      font-weight: bold;
-      cursor: pointer;
-      text-align: center;
-    }
-
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-bottom: 5px;
-    }
-
-    .footer-links a {
-      color: black;
-      font-weight: bold;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    .footer-links a:hover {
-      color: #007bff;
-      text-decoration: underline;
-    }
-
-    .footer p {
-      margin: 5px 0;
-      font-size: 14px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -203,44 +26,24 @@
 
     <div class="buttons-container">
       <div class="row">
-        <div class="button" onclick="location.href='Colleges/nursing.html'">
-          التمريض والعلوم الصحية
-        </div>
-        <div class="button" onclick="location.href='Colleges/education.html'">
-          كلية العلوم التربوية
-        </div>
-        <div class="button" onclick="location.href='Colleges/tourism.html'">
-          السياحة والآثار
-        </div>
-        <div class="button" onclick="location.href='Colleges/tech.html'">
-          تكنولوجيا المعلومات
-        </div>
-        <div class="button" onclick="location.href='Colleges/engineering.html'">
-          الهندسة
-        </div>
+        <div class="button" onclick="location.href='Colleges/html/nursing.html'">التمريض والعلوم الصحية</div>
+        <div class="button" onclick="location.href='Colleges/html/education.html'">كلية العلوم التربوية</div>
+        <div class="button" onclick="location.href='Colleges/html/tourism.html'">السياحة والآثار</div>
+        <div class="button" onclick="location.href='Colleges/html/tech.html'">تكنولوجيا المعلومات</div>
+        <div class="button" onclick="location.href='Colleges/html/engineering.html'">الهندسة</div>
       </div>
     </div>
+
     <div class="row">
-      <div class="button" onclick="location.href='Colleges/arts.html'">
-        الآداب
-      </div>
-      <div class="button" onclick="location.href='Colleges/law.html'">
-        القانون
-      </div>
-      <div class="button" onclick="location.href='Colleges/business.html'">
-        الأعمال
-      </div>
-      <div class="button" onclick="location.href='Colleges/science.html'">
-        العلوم
-      </div>
+      <div class="button" onclick="location.href='Colleges/html/arts.html'">الآداب</div>
+      <div class="button" onclick="location.href='Colleges/html/law.html'">القانون</div>
+      <div class="button" onclick="location.href='Colleges/html/business.html'">الأعمال</div>
+      <div class="button" onclick="location.href='Colleges/html/science.html'">العلوم</div>
     </div>
+
     <div class="row">
-      <div class="button" onclick="location.href='Colleges/cbs.html'">
-        محاكاة الاختبارات
-      </div>
-      <div class="button" onclick="location.href='Colleges/mks.html'">
-        الخطة الدراسية
-      </div>
+      <div class="button" onclick="location.href='Colleges/html/cbs.html'">محاكاة الاختبارات</div>
+      <div class="button" onclick="location.href='Colleges/html/mks.html'">الخطة الدراسية</div>
     </div>
   </div>
 
@@ -249,77 +52,13 @@
       <a href="mailto:innovaahujo@gmail.com"><i class="fas fa-envelope"></i> innovaahujo@gmail.com</a>
       <a href="https://wa.me/962795868995" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
       <a href="https://www.ahu.edu.jo/" target="_blank"><i class="fas fa-globe"></i> موقع الجامعة</a>
-      <a href="https://www.facebook.com/groups/431319921578977/?ref=share&mibextid=NSMWBT" target="_blank"><i
-          class="fab fa-facebook"></i> فيسبوك</a>
+      <a href="https://www.facebook.com/groups/431319921578977/?ref=share&mibextid=NSMWBT" target="_blank"><i class="fab fa-facebook"></i> فيسبوك</a>
       <a href="https://www.instagram.com/innovahu" target="_blank"><i class="fab fa-instagram"></i> إنستقرام</a>
     </div>
     <p>تم التصميم والتطوير بواسطة Innova Team - جامعة الحسين بن طلال</p>
     <p>© 2025 Marja3i_AHU - جميع الحقوق محفوظة</p>
   </footer>
-  </div>
 
-  <script>
-    const filesToSearch = [
-      { name: "التمريض", file: "Colleges/nursing.html" },
-      { name: "التربية", file: "Colleges/education.html" },
-      { name: "السياحة", file: "Colleges/tourism.html" },
-      { name: "تكنولوجيا المعلومات", file: "Colleges/tech.html" },
-      { name: "الهندسة", file: "Colleges/engineering.html" },
-      { name: "الآداب", file: "Colleges/arts.html" },
-      { name: "القانون", file: "Colleges/law.html" },
-      { name: "الأعمال", file: "Colleges/business.html" },
-      { name: "العلوم", file: "Colleges/science.html" },
-    ];
-
-    const searchInput = document.getElementById("search-input");
-    const resultsContainer = document.getElementById("search-results");
-
-    searchInput.addEventListener("keydown", async function (e) {
-      if (e.key === "Enter") {
-        const query = this.value.trim().toLowerCase();
-        resultsContainer.innerHTML = "";
-
-        if (!query) return;
-
-        let matches = [];
-
-        for (const item of filesToSearch) {
-          try {
-            const response = await fetch(item.file);
-            const text = await response.text();
-            if (text.toLowerCase().includes(query)) {
-              matches.push(item);
-            }
-          } catch (err) {
-            console.error(`فشل تحميل الملف: ${item.file}`, err);
-          }
-        }
-
-        if (matches.length === 1) {
-          window.location.href = matches[0].file;
-        } else if (matches.length > 1) {
-          const title = document.createElement("p");
-          title.textContent = "نتائج البحث:";
-          resultsContainer.appendChild(title);
-
-          matches.forEach((match) => {
-            const link = document.createElement("a");
-            link.href = match.file;
-            link.textContent = `📁 ${match.name}`;
-            resultsContainer.appendChild(link);
-          });
-        } else {
-          resultsContainer.innerHTML = "<p>لا توجد نتائج.</p>";
-        }
-      }
-    });
-
-    document.addEventListener("click", (e) => {
-      if (!searchInput.contains(e.target) && !resultsContainer.contains(e.target)) {
-        resultsContainer.innerHTML = "";
-      }
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
-
 </html>
