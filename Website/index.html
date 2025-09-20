@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
   <meta charset="UTF-8" />
   <title>Marja3i_AHU</title>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    /* body {
+    body {
       margin: 0;
       font-family: "Segoe UI", sans-serif;
       background: url("images/backgrounde.png") no-repeat center center fixed;
@@ -37,7 +35,7 @@
       box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(6px);
       border-top: 1px solid rgba(0, 0, 0, 0.05);
-    } */
+    }
 
     header {
       display: flex;
@@ -48,7 +46,7 @@
     }
 
     .search-box {
-      position: relative; 
+      position: relative;
       display: flex;
       align-items: center;
       border: 1px solid black;
@@ -185,6 +183,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="overlay">
     <header>
@@ -193,15 +192,14 @@
         🔍<input type="text" id="search-input" placeholder="بحث عن مادة" autocomplete="off" />
         <div id="search-results"></div>
       </div>
-      <div
-        class="button2"
-        onclick="location.href='../Course/login.html'"
-      >
+      <div class="button2" onclick="location.href='../Course/login.html'">
         <b>Course</b>
       </div>
     </header>
 
-    <center><div class="main-title">Colleges</div></center>
+    <center>
+      <div class="main-title">Colleges</div>
+    </center>
 
     <div class="buttons-container">
       <div class="row">
@@ -221,52 +219,43 @@
           الهندسة
         </div>
       </div>
+    </div>
+    <div class="row">
+      <div class="button" onclick="location.href='Colleges/arts.html'">
+        الآداب
       </div>
-      <div class="row">
-        <div class="button" onclick="location.href='Colleges/arts.html'">
-          الآداب
-        </div>
-        <div class="button" onclick="location.href='Colleges/law.html'">
-          القانون
-        </div>
-        <div class="button" onclick="location.href='Colleges/business.html'">
-          الأعمال
-        </div>
-        <div class="button" onclick="location.href='Colleges/science.html'">
-          العلوم
-        </div>
+      <div class="button" onclick="location.href='Colleges/law.html'">
+        القانون
       </div>
-      <div class="row">
-        <div class="button" onclick="location.href='Colleges/cbs.html'">
-         محاكاة الاختبارات
-        </div>
-        <div class="button" onclick="location.href='Colleges/mks.html'">
-       الخطة الدراسية 
-        </div>
+      <div class="button" onclick="location.href='Colleges/business.html'">
+        الأعمال
+      </div>
+      <div class="button" onclick="location.href='Colleges/science.html'">
+        العلوم
       </div>
     </div>
-
-    <footer class="footer">
-      <div class="footer-links">
-        <a href="mailto:innovaahujo@gmail.com"
-          ><i class="fas fa-envelope"></i> innovaahujo@gmail.com</a
-        >
-        <a href="https://wa.me/962795868995" target="_blank"
-          ><i class="fab fa-whatsapp"></i> واتساب</a
-        >
-        <a href="https://www.ahu.edu.jo/" target="_blank"
-          ><i class="fas fa-globe"></i> موقع الجامعة</a
-        >
-        <a href="https://www.facebook.com/groups/431319921578977/?ref=share&mibextid=NSMWBT" target="_blank"
-          ><i class="fab fa-facebook"></i> فيسبوك</a
-        >
-        <a href="https://www.instagram.com/innovahu" target="_blank"
-          ><i class="fab fa-instagram"></i> إنستقرام</a
-        >
+    <div class="row">
+      <div class="button" onclick="location.href='Colleges/cbs.html'">
+        محاكاة الاختبارات
       </div>
-      <p>تم التصميم والتطوير بواسطة Innova Team - جامعة الحسين بن طلال</p>
-      <p>© 2025 Marja3i_AHU - جميع الحقوق محفوظة</p>
-    </footer>
+      <div class="button" onclick="location.href='Colleges/mks.html'">
+        الخطة الدراسية
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="mailto:innovaahujo@gmail.com"><i class="fas fa-envelope"></i> innovaahujo@gmail.com</a>
+      <a href="https://wa.me/962795868995" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+      <a href="https://www.ahu.edu.jo/" target="_blank"><i class="fas fa-globe"></i> موقع الجامعة</a>
+      <a href="https://www.facebook.com/groups/431319921578977/?ref=share&mibextid=NSMWBT" target="_blank"><i
+          class="fab fa-facebook"></i> فيسبوك</a>
+      <a href="https://www.instagram.com/innovahu" target="_blank"><i class="fab fa-instagram"></i> إنستقرام</a>
+    </div>
+    <p>تم التصميم والتطوير بواسطة Innova Team - جامعة الحسين بن طلال</p>
+    <p>© 2025 Marja3i_AHU - جميع الحقوق محفوظة</p>
+  </footer>
   </div>
 
   <script>
@@ -332,4 +321,5 @@
     });
   </script>
 </body>
+
 </html>
