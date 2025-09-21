@@ -1,15 +1,19 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: url('../../images/backgroundnus.png') no-repeat center center fixed;
+    background: url('../../images/backgroundt.png') no-repeat center center fixed;
     background-size: cover;
     color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .overlay {
     background-color: rgba(255, 255, 255, 0.1);
-    min-height: 100vh;
+    flex: 1;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 header {
@@ -20,20 +24,43 @@ header {
     font-weight: bold;
 }
 
+/* ===================== */
+/* 🔍 Search Box Styles  */
+/* ===================== */
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background: white;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    background: transparent;
+    flex: 1;
+}
+
+/* ===================== */
+/* 📚 Course List Styles */
+/* ===================== */
 .course-list {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 30px;
     border-radius: 15px;
     width: 400px;
-    margin-right: 130px;
-    margin-left: auto;
-    margin-top: 200px;
+    margin: 120px auto 40px auto;
+    /* Center horizontally */
 }
 
 ul {
     list-style-type: disc;
     font-size: 18px;
     font-weight: bold;
+    padding-left: 20px;
 }
 
 li:first-child {
@@ -43,17 +70,19 @@ li:first-child {
     width: fit-content;
 }
 
+/* ===================== */
+/* 🦶 Footer (No overlap)*/
+/* ===================== */
 .footer {
-    position: fixed;
-    bottom: 0;
+    position: relative;
     width: 100%;
     text-align: center;
     padding: 10px 0;
     background-color: rgba(255, 255, 255, 0.5);
-    z-index: 100;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6px);
     border-top: 1px solid rgba(0, 0, 0, 0.05);
+    margin-top: auto;
 }
 
 .footer-links {
@@ -79,4 +108,34 @@ li:first-child {
 .footer p {
     margin: 5px 0;
     font-size: 14px;
+}
+
+/* ===================== */
+/* 📱 Responsive Design */
+/* ===================== */
+
+/* Phones (≤600px) */
+@media screen and (max-width: 600px) {
+    .course-list {
+        width: 90%;
+        margin: 80px auto 30px auto;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    ul {
+        font-size: 16px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+}
+
+/* Tablets (≤1024px) */
+@media screen and (max-width: 1024px) {
+    .course-list {
+        width: 70%;
+        margin: 100px auto 40px auto;
+    }
 }

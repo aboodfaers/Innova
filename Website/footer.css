@@ -1,14 +1,14 @@
 .footer {
     position: relative;
-    bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 10px 0;
+    padding: 12px 0;
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6px);
     border-top: 1px solid rgba(0, 0, 0, 0.05);
-    margin-top: 20px;
+    margin-top: auto;
+    /* push footer to bottom */
 }
 
 .footer-links {
@@ -24,6 +24,9 @@
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: 16px;
+    padding: 4px 8px;
+    /* makes links easier to tap */
 }
 
 .footer-links a:hover {
@@ -36,9 +39,31 @@
     font-size: 14px;
 }
 
+/* ===================== */
+/* 📱 Responsive Design  */
+/* ===================== */
+
+/* For phones (<=600px) */
 @media screen and (max-width: 600px) {
     .footer-links {
         flex-direction: column;
         gap: 8px;
+        align-items: center;
+    }
+
+    .footer-links a {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+
+    .footer p {
+        font-size: 13px;
+    }
+}
+
+/* For tablets (<=1024px but >600px) */
+@media screen and (max-width: 1024px) {
+    .footer-links a {
+        font-size: 17px;
     }
 }
