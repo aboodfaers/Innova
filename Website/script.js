@@ -13,46 +13,62 @@ const filesToSearch = [
 const searchInput = document.getElementById("search-input");
 const resultsContainer = document.getElementById("search-results");
 
-searchInput.addEventListener("keydown", async function (e) {
-    if (e.key === "Enter") {
-        const query = this.value.trim().toLowerCase();
-        resultsContainer.innerHTML = "";
+// Debounce function to limit search calls
+function debounce(func, delay) {
+    let timeout;
+    return (...args) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func(...args), delay);
+    };
+}
 
-        if (!query) return;
+// Function to perform search
+async function performSearch(query) {
+    resultsContainer.innerHTML = "";
+    if (!query) return;
 
-        let matches = [];
+    const lowerQuery = query.toLowerCase();
+    let matches = [];
 
-        for (const item of filesToSearch) {
-            try {
-                const response = await fetch(item.file);
-                const text = await response.text();
-                if (text.toLowerCase().includes(query)) {
-                    matches.push(item);
-                }
-            } catch (err) {
-                console.error(`فشل تحميل الملف: ${item.file}`, err);
+    for (const item of filesToSearch) {
+        try {
+            const response = await fetch(item.file);
+            const text = await response.text();
+            if (text.toLowerCase().includes(lowerQuery)) {
+                matches.push(item);
             }
-        }
-
-        if (matches.length === 1) {
-            window.location.href = matches[0].file;
-        } else if (matches.length > 1) {
-            const title = document.createElement("p");
-            title.textContent = "نتائج البحث:";
-            resultsContainer.appendChild(title);
-
-            matches.forEach((match) => {
-                const link = document.createElement("a");
-                link.href = match.file;
-                link.textContent = `📁 ${match.name}`;
-                resultsContainer.appendChild(link);
-            });
-        } else {
-            resultsContainer.innerHTML = "<p>لا توجد نتائج.</p>";
+        } catch (err) {
+            console.error(`فشل تحميل الملف: ${item.file}`, err);
         }
     }
-});
 
+    if (matches.length === 1) {
+        // Redirect instantly if exactly one match
+        window.location.href = matches[0].file;
+    } else if (matches.length > 1) {
+        const title = document.createElement("p");
+        title.textContent = "نتائج البحث:";
+        resultsContainer.appendChild(title);
+
+        matches.forEach((match) => {
+            const link = document.createElement("a");
+            link.href = match.file;
+            link.textContent = `📁 ${match.name}`;
+            link.style.display = "block";
+            resultsContainer.appendChild(link);
+        });
+    } else {
+        resultsContainer.innerHTML = "<p>لا توجد نتائج.</p>";
+    }
+}
+
+// Add input event listener with debounce for instant search
+searchInput.addEventListener("input", debounce(() => {
+    const query = searchInput.value.trim();
+    performSearch(query);
+}, 200));
+
+// Hide results when clicking outside
 document.addEventListener("click", (e) => {
     if (!searchInput.contains(e.target) && !resultsContainer.contains(e.target)) {
         resultsContainer.innerHTML = "";
