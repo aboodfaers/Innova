@@ -22,9 +22,8 @@ body {
 /* للموبايل - حتى تبقى الصورة كاملة وما يصير مشاكل */
 @media (max-width: 768px) {
     body {
-        background-size: contain;    /* الصورة كاملة */
-        background-attachment: scroll;
-        background-color: #e3eaf6;   /* يملأ الفراغات */
+ background: #e3eaf6 url("images/backgroundlaw.png") no-repeat center center;
+ background-size: cover;
     }
 }
 /* ===== Header ===== */
