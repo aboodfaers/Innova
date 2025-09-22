@@ -53,6 +53,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -106,92 +107,14 @@ nav a:hover {
     display: block;
 }
 
-/* ===== Hero Section ===== */
-.hero {
-    background: url("https://i.ibb.co/Zmqp9jm/university-gate.png") no-repeat center/cover;
-    min-height: 400px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
-    border-radius: 18px;
-    margin: 0 18px 36px 18px;
-    box-shadow: 0 6px 32px rgba(255, 183, 77, 0.10);
-    position: relative;
-    overflow: hidden;
-}
-
-.hero>* {
-    position: relative;
-    z-index: 2;
-}
-
-/* ===== Main Title ===== */
-.main-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin: 70px 0 60px;
-    font-weight: 800;
-    color: #ff9800;
-    background: #fffde7;
-    display: inline-block;
-    padding: 18px 40px;
-    border-radius: 18px;
-    box-shadow: 0 2px 12px rgba(255, 183, 77, 0.07);
-    letter-spacing: 1px;
-}
-
-/* ===== Buttons ===== */
-.buttons-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 32px;
-    margin-top: 60px;
-}
-
-.row {
+/* ===== Search Bar (Moved Below Header) ===== */
+.search-bar-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 36px;
-    margin-bottom: 60px;
+    margin: 24px 0 16px 0;
+    width: 100%;
 }
 
-.button,
-.button2 {
-    background: linear-gradient(90deg, #ffe082 0%, #ffb74d 100%);
-    border-radius: 18px;
-    padding: 20px 36px;
-    box-shadow: 0 2px 12px rgba(255, 183, 77, 0.10);
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #8d6e36;
-    cursor: pointer;
-    min-width: 150px;
-    text-align: center;
-    border: none;
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-}
-
-.button:hover,
-.button2:hover {
-    background: linear-gradient(90deg, #fff8e1 0%, #ffe082 100%);
-    color: #e65100;
-    box-shadow: 0 4px 20px rgba(255, 183, 77, 0.18);
-}
-
-.button2 {
-    font-size: 1.05rem;
-    padding: 10px 18px;
-    border-radius: 10px;
-    background: #fffde7;
-    color: #b26a00;
-    border: 1px solid #ffb74d;
-}
-
-/* ===== Search Box ===== */
 .search-box {
     position: relative;
     display: flex;
@@ -201,7 +124,7 @@ nav a:hover {
     padding: 10px 20px;
     background: #fffde7;
     max-width: 400px;
-    flex-grow: 1;
+    width: 100%;
     box-shadow: 0 2px 8px rgba(255, 183, 77, 0.04);
 }
 
@@ -216,6 +139,7 @@ nav a:hover {
 }
 
 #search-results {
+    display: none;
     position: absolute;
     top: 110%;
     left: 0;
@@ -248,6 +172,70 @@ nav a:hover {
 #search-results a:hover {
     background: #ffe082;
     color: #e65100;
+}
+
+/* ===== Main Title ===== */
+.main-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 40px 0 30px;
+    font-weight: 800;
+    color: #ff9800;
+    background: #fffde7;
+    display: inline-block;
+    padding: 18px 40px;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(255, 183, 77, 0.07);
+    letter-spacing: 1px;
+}
+
+/* ===== Buttons ===== */
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 36px;
+    margin-bottom: 30px;
+}
+
+.button,
+.button2 {
+    background: linear-gradient(90deg, #ffe082 0%, #ffb74d 100%);
+    border-radius: 18px;
+    padding: 20px 36px;
+    box-shadow: 0 2px 12px rgba(255, 183, 77, 0.10);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #8d6e36;
+    cursor: pointer;
+    min-width: 150px;
+    text-align: center;
+    border: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.button:hover,
+.button2:hover {
+    background: linear-gradient(90deg, #fff8e1 0%, #ffe082 100%);
+    color: #e65100;
+    box-shadow: 0 4px 20px rgba(255, 183, 77, 0.18);
+}
+
+.button2 {
+    font-size: 1.05rem;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background: #fffde7;
+    color: #b26a00;
+    border: 1px solid #ffb74d;
 }
 
 /* ===== Overlay ===== */
@@ -307,6 +295,13 @@ nav a:hover {
         padding: 14px 8px;
     }
 
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
     .main-title {
         font-size: 1.7rem;
         padding: 12px 10px;
@@ -315,6 +310,15 @@ nav a:hover {
     .overlay,
     .hero {
         margin: 0 6px 18px 6px;
+    }
+
+    .search-bar-container {
+        margin: 18px 0 12px 0;
+    }
+
+    .search-box {
+        max-width: 100%;
+        width: 100%;
     }
 }
 
@@ -326,7 +330,9 @@ nav a:hover {
 
     .buttons-container,
     .row {
-        gap: 12px;
+        gap: 8px;
+        flex-direction: column;
+        align-items: stretch;
     }
 
     .overlay,
@@ -344,5 +350,28 @@ nav a:hover {
     .footer {
         border-radius: 8px 8px 0 0;
         font-size: 0.9rem;
+    }
+
+    .search-bar-container {
+        margin: 10px 0 8px 0;
+        padding: 0 4px;
+    }
+
+    .search-box {
+        padding: 8px 8px;
+        font-size: 1rem;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .button,
+    .button2 {
+        width: 100%;
+        min-width: unset;
+        font-size: 1rem;
+        padding: 14px 10px;
     }
 }

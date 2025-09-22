@@ -5,10 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Marja3i_AHU</title>
-
   <meta name="keywords" content="مرجعي, marja3, المرجع, مرجعي موقع, marja3.com">
   <meta name="description" content="مرجعي - موقع marja3 الرسمي.">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -20,12 +18,6 @@
         <img src="https://i.ibb.co/Vp2yFnW/logo.png" alt="Logo">
         <span>Marja3i</span>
       </div>
-
-      <div class="search-box">
-        <input type="text" placeholder="بحث عن مادة" id="search-input">
-        <div id="search-results"></div>
-      </div>
-
       <nav>
         <a href="#" id="nav-home">الرئيسية</a>
         <a href="#" id="nav-courses">المساقات</a>
@@ -36,7 +28,6 @@
             <a href="#" id="nav-report">الإبلاغ عن مشكلة</a>
           </div>
         </div>
-        <!-- Language Switcher -->
         <div class="dropdown">
           <a href="#" id="lang-switcher"><i class="fa-solid fa-globe"></i> اللغة</a>
           <div class="dropdown-content">
@@ -46,6 +37,14 @@
         </div>
       </nav>
     </header>
+
+    <!-- Search bar -->
+    <div class="search-bar-container">
+      <div class="search-box">
+        <input type="text" placeholder="بحث عن مادة" id="search-input">
+        <div id="search-results"></div>
+      </div>
+    </div>
 
     <center>
       <div class="main-title" id="main-title">الكليات</div>
@@ -73,8 +72,6 @@
   </div>
 
   <div id="footer-container"></div>
-
-  <!-- JS Files -->
   <script src="footer.js"></script>
   <script src="script.js"></script>
 </body>
