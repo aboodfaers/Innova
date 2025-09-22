@@ -442,7 +442,7 @@ html[dir="rtl"] .nav-toggle {
     .button,
     .button2 {
         width: 55%;
-        margin: auto;
+        margin: 0 auto;
         min-width: unset;
         font-size: 1rem;
         padding: 14px 10px;
