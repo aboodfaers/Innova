@@ -10,7 +10,7 @@
 body {
     font-family: "Segoe UI", Arial, sans-serif;
     background: url("images/backgrounde.png") no-repeat center center fixed;
-    background-size: cover;
+    background-size: contain 100%;
     color: #2d3a4a;
     min-height: 100vh;
     display: flex;
