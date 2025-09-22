@@ -11,8 +11,10 @@
 body {
     font-family: "Segoe UI", Arial, sans-serif;
     background: #e3eaf6 url("images/backgrounde.png") no-repeat center center;
-    background-size: cover;          /* تغطي الصفحة */
-    background-attachment: fixed;    /* تثبيت عند التمرير */
+    background-size: cover;
+    /* تغطي الصفحة */
+    background-attachment: fixed;
+    /* تثبيت عند التمرير */
     color: #2d3a4a;
     min-height: 100vh;
     display: flex;
@@ -22,11 +24,12 @@ body {
 /* للموبايل - حتى تبقى الصورة كاملة وما يصير مشاكل */
 @media (max-width: 768px) {
     body {
- background: #e3eaf6 url("images/backgroundlaw.png") no-repeat center center;
- background-size: cover;
- background-attachment: fixed;
+        background: #e3eaf6 url("images/backgroundlaw.png") no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
     }
 }
+
 /* ===== Header ===== */
 header {
     background: #e3eaf6;
@@ -402,7 +405,6 @@ html[dir="rtl"] .nav-toggle {
         gap: 8px;
         flex-direction: column;
         align-items: stretch;
-
     }
 
     .overlay,
@@ -439,7 +441,8 @@ html[dir="rtl"] .nav-toggle {
 
     .button,
     .button2 {
-        width: 60%;
+        width: 55%;
+        margin: auto;
         min-width: unset;
         font-size: 1rem;
         padding: 14px 10px;
