@@ -9,14 +9,23 @@
 
 body {
     font-family: "Segoe UI", Arial, sans-serif;
-    background: url("images/backgrounde.png") no-repeat center center fixed;
-    background-size: contain 100%;
+    background: #e3eaf6 url("images/backgrounde.png") no-repeat center center;
+    background-size: cover;          /* تغطي الصفحة */
+    background-attachment: fixed;    /* تثبيت عند التمرير */
     color: #2d3a4a;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+/* للموبايل - حتى تبقى الصورة كاملة وما يصير مشاكل */
+@media (max-width: 768px) {
+    body {
+        background-size: contain;    /* الصورة كاملة */
+        background-attachment: scroll;
+        background-color: #e3eaf6;   /* يملأ الفراغات */
+    }
+}
 /* ===== Header ===== */
 header {
     background: #e3eaf6;
