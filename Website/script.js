@@ -9,6 +9,7 @@ function switchLang(lang) {
         document.getElementById('nav-more').textContent = 'More ▾';
         document.getElementById('nav-about').textContent = 'About Us';
         document.getElementById('nav-report').textContent = 'Report a Problem';
+        document.getElementById('lang-label').textContent = 'Language';
         const buttons = [
             "Nursing & Health Sciences",
             "Educational Sciences",
@@ -35,6 +36,7 @@ function switchLang(lang) {
         document.getElementById('nav-more').textContent = 'المزيد ▾';
         document.getElementById('nav-about').textContent = 'من نحن';
         document.getElementById('nav-report').textContent = 'الإبلاغ عن مشكلة';
+        document.getElementById('lang-label').textContent = 'اللغة';
         const buttons = [
             "التمريض والعلوم الصحية",
             "كلية العلوم التربوية",
@@ -62,7 +64,7 @@ const filesToSearch = [
     { name_ar: "السياحة والآثار", name_en: "Tourism & Archaeology", file: "Colleges/html/tourism.html" },
     { name_ar: "تكنولوجيا المعلومات", name_en: "Information Technology", file: "Colleges/html/tech.html" },
     { name_ar: "الهندسة", name_en: "Engineering", file: "Colleges/html/engineering.html" },
-    { name_ar: "الآداب", name_en: "Arts", file: "Colleges/html/arts.html" },
+    { name_ar: "الآداب", name_en: "Literature", file: "Colleges/html/arts.html" },
     { name_ar: "القانون", name_en: "Law", file: "Colleges/html/law.html" },
     { name_ar: "الأعمال", name_en: "Business", file: "Colleges/html/business.html" },
     { name_ar: "العلوم", name_en: "Science", file: "Colleges/html/science.html" },
@@ -142,4 +144,29 @@ searchInput.addEventListener("focus", function () {
     if (this.value.trim() !== "" && resultsContainer.innerHTML.trim() !== "") {
         resultsContainer.style.display = "block";
     }
+});
+
+// --- Mobile Nav Toggle ---
+const navToggle = document.getElementById('nav-toggle');
+const mainNav = document.getElementById('main-nav');
+if (navToggle && mainNav) {
+    navToggle.addEventListener('click', function () {
+        mainNav.classList.toggle('open');
+    });
+}
+
+// --- Dropdowns on Mobile ---
+document.querySelectorAll('.dropdown > a').forEach(drop => {
+    drop.addEventListener('click', function (e) {
+        // Only on mobile
+        if (window.innerWidth <= 900) {
+            e.preventDefault();
+            const parent = this.parentElement;
+            parent.classList.toggle('open');
+            // Close other open dropdowns
+            document.querySelectorAll('.dropdown').forEach(d => {
+                if (d !== parent) d.classList.remove('open');
+            });
+        }
+    });
 });
