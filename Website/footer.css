@@ -44,7 +44,7 @@
 /* ===================== */
 
 /* For phones (<=600px) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .footer-links {
         flex-direction: column;
         gap: 8px;
@@ -62,7 +62,7 @@
 }
 
 /* For tablets (<=1024px but >600px) */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .footer-links a {
         font-size: 17px;
     }

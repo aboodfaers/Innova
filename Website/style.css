@@ -174,7 +174,7 @@ header {
 /* ===================== */
 
 /* For tablets (max-width 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .main-title {
         font-size: 32px;
         margin: 50px 0 100px;
@@ -188,7 +188,7 @@ header {
 }
 
 /* For phones (max-width 600px) */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     header {
         flex-direction: column;
         align-items: center;
