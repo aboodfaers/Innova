@@ -4,17 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Marja3i - EDU</title>
-  
-  <!-- Font Awesome -->
+  <title>كلية العلوم التربية</title>
+  <link rel="stylesheet" href="../colleges.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  
-  <!-- Shared college CSS -->
-  <link rel="stylesheet" href="../colleges.css">
-  
   <style>
     body {
-      background-image: url('../../images/backgroundedu.png');
+      background: url("../../images/backgroundedu.png") no-repeat center center fixed;
+      background-size: cover;
+      color: #3e2723;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
   </style>
 </head>
@@ -22,27 +22,62 @@
 <body>
   <div class="overlay">
     <header>
-      <div>PDF_AHU</div>
-      <div class="search-box">
-        🔍 <input type="text" id="search-input" placeholder="بحث عن مادة">
+      <div class="logo">
+        <img src="../../images/logo.png" alt="Logo">
+        <span>Marja3i</span>
       </div>
-      <div><a href="../../index.html" style="text-decoration: none; color: black;">Home</a></div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="القائمة">
+        <i class="fa fa-bars"></i>
+      </button>
+      <nav id="main-nav">
+        <a href="../../index.html" id="nav-home">الرئيسية</a>
+        <a href="#" id="nav-courses">المساقات</a>
+        <div class="dropdown">
+          <a href="#" id="nav-more">المزيد ▾</a>
+          <div class="dropdown-content">
+            <a href="#" id="nav-about">من نحن</a>
+            <a href="#" id="nav-report">الإبلاغ عن مشكلة</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" id="lang-switcher"><i class="fa-solid fa-globe"></i> <span id="lang-label">اللغة</span></a>
+          <div class="dropdown-content">
+            <a href="#" onclick="switchLang('ar'); return false;">العربية</a>
+            <a href="#" onclick="switchLang('en'); return false;">English</a>
+          </div>
+        </div>
+      </nav>
     </header>
-    <div class="course-list">
-      <ul id="course-list">
-        <li>أساليب تدريس التربية الأخلاقية</li>
-        <li>أساليب تدريس التربية الاجتماعية</li>
-        <li>تربية خاصة</li>
-        <li>معلم الصف</li>
-        <li>رياض الأطفال</li>
-        <li>أساليب تدريس التربية التكنولوجية</li>
-      </ul>
+    <div class="main-title" id="main-title"></div>
+    <div class="search-bar-container">
+      <div class="search-box">
+        <input type="text" placeholder="بحث عن مادة" id="search-input">
+        <div id="search-results"></div>
+      </div>
     </div>
-    <main class="content"></main>
+    <div class="course-list" id="course-list">
+      <ul id="courses-ul"></ul>
+    </div>
   </div>
-  <!-- Footer-->
+
   <div id="footer-container"></div>
+  <script>
+    window.collegeCourses = {
+      title_ar: "كلية التمريض والعلوم الصحية",
+      title_en: "Nursing & Health Sciences",
+      courses: [
+        { ar: "أساسيات التمريض", en: "Nursing Fundamentals", url: "#" },
+        { ar: "تمريض صحة المجتمع", en: "Community Health Nursing", url: "#" },
+        { ar: "تمريض الأطفال", en: "Pediatric Nursing", url: "#" },
+        { ar: "تمريض البالغين", en: "Adult Nursing", url: "#" },
+        { ar: "تمريض الحالات الحرجة", en: "Critical Care Nursing", url: "#" },
+        { ar: "تمريض الصحة النفسية", en: "Mental Health Nursing", url: "#" },
+        { ar: "تمريض الأمومة", en: "Maternity Nursing", url: "#" }
+      ]
+    };
+  </script>
   <script src="../../footer.js"></script>
+  <script src="../colleges.js"></script>
 </body>
 
 </html>
