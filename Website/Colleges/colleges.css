@@ -20,11 +20,106 @@ body {
 }
 
 header {
+    background: #a6cfcf;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.logo span {
     font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* ===== Dropdown ===== */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #a6cfcf;
+    min-width: 120px;
+    right: 0;
+    top: 100%;
+    border-radius: 4px;
+    padding: 10px 0;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    background: url("https://i.ibb.co/Zmqp9jm/university-gate.png") no-repeat center/cover;
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.footer {
+    background: #a6cfcf;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-box {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
 }
 
 .home-link {
@@ -91,18 +186,6 @@ li:first-child {
     font-size: 14px;
 }
 
-/* Responsive design for tablets and phones */
-@media (max-width: 768px) {
-    .course-list {
-        width: 90%;
-        margin-top: 100px;
-        font-size: 16px;
-    }
-
-    ul {
-        font-size: 16px;
-    }
-}
 
 @media (max-width: 480px) {
     header {

@@ -16,23 +16,42 @@
 <body>
   <div class="overlay">
     <header>
-      <div>Marja3i_AHU</div>
+      <div class="logo">
+        <img src="https://i.ibb.co/Vp2yFnW/logo.png" alt="Logo">
+        <span>Marja3i</span>
+      </div>
 
       <div class="search-box">
-        🔍<input type="text" id="search-input" placeholder="بحث عن مادة" autocomplete="off" />
+        <input type="text" placeholder="بحث عن مادة" id="search-input">
         <div id="search-results"></div>
       </div>
 
-      <div class="button2" onclick="location.href='../Course/login.html'">
-        <b>Course</b>
-      </div>
+      <nav>
+        <a href="#" id="nav-home">الرئيسية</a>
+        <a href="#" id="nav-courses">المساقات</a>
+        <div class="dropdown">
+          <a href="#" id="nav-more">المزيد ▾</a>
+          <div class="dropdown-content">
+            <a href="#" id="nav-about">من نحن</a>
+            <a href="#" id="nav-report">الإبلاغ عن مشكلة</a>
+          </div>
+        </div>
+        <!-- Language Switcher -->
+        <div class="dropdown">
+          <a href="#" id="lang-switcher"><i class="fa-solid fa-globe"></i> اللغة</a>
+          <div class="dropdown-content">
+            <a href="#" onclick="switchLang('ar'); return false;">العربية</a>
+            <a href="#" onclick="switchLang('en'); return false;">English</a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <center>
-      <div class="main-title">Colleges</div>
+      <div class="main-title" id="main-title">الكليات</div>
     </center>
 
-    <div class="buttons-container">
+    <div class="buttons-container" id="buttons-container">
       <div class="row">
         <div class="button" onclick="location.href='Colleges/html/nursing.html'">التمريض والعلوم الصحية</div>
         <div class="button" onclick="location.href='Colleges/html/education.html'">كلية العلوم التربوية</div>
@@ -40,20 +59,17 @@
         <div class="button" onclick="location.href='Colleges/html/tech.html'">تكنولوجيا المعلومات</div>
         <div class="button" onclick="location.href='Colleges/html/engineering.html'">الهندسة</div>
       </div>
+      <div class="row">
+        <div class="button" onclick="location.href='Colleges/html/arts.html'">الآداب</div>
+        <div class="button" onclick="location.href='Colleges/html/law.html'">القانون</div>
+        <div class="button" onclick="location.href='Colleges/html/business.html'">الأعمال</div>
+        <div class="button" onclick="location.href='Colleges/html/science.html'">العلوم</div>
+      </div>
+      <div class="row">
+        <div class="button" onclick="location.href='Colleges/html/cbs.html'">محاكاة الاختبارات</div>
+        <div class="button" onclick="location.href='Colleges/html/mks.html'">الخطة الدراسية</div>
+      </div>
     </div>
-
-    <div class="row">
-      <div class="button" onclick="location.href='Colleges/html/arts.html'">الآداب</div>
-      <div class="button" onclick="location.href='Colleges/html/law.html'">القانون</div>
-      <div class="button" onclick="location.href='Colleges/html/business.html'">الأعمال</div>
-      <div class="button" onclick="location.href='Colleges/html/science.html'">العلوم</div>
-    </div>
-
-    <div class="row">
-      <div class="button" onclick="location.href='Colleges/html/cbs.html'">محاكاة الاختبارات</div>
-      <div class="button" onclick="location.href='Colleges/html/mks.html'">الخطة الدراسية</div>
-    </div>
-
   </div>
 
   <div id="footer-container"></div>
