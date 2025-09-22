@@ -24,6 +24,7 @@ body {
     body {
  background: #e3eaf6 url("images/backgroundlaw.png") no-repeat center center;
  background-size: cover;
+ background-attachment: fixed;
     }
 }
 /* ===== Header ===== */
@@ -401,6 +402,7 @@ html[dir="rtl"] .nav-toggle {
         gap: 8px;
         flex-direction: column;
         align-items: stretch;
+
     }
 
     .overlay,
@@ -437,7 +439,7 @@ html[dir="rtl"] .nav-toggle {
 
     .button,
     .button2 {
-        width: 100%;
+        width: 60%;
         min-width: unset;
         font-size: 1rem;
         padding: 14px 10px;
