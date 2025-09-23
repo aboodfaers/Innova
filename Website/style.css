@@ -423,28 +423,4 @@ html[dir="rtl"] .nav-toggle {
         border-radius: 8px 8px 0 0;
         font-size: 0.9rem;
     }
-
-    .search-bar-container {
-        margin: 10px 0 8px 0;
-        padding: 0 4px;
-    }
-
-    .search-box {
-        padding: 8px 8px;
-        font-size: 1rem;
-    }
-
-    .row {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .button,
-    .button2 {
-        width: 55%;
-        margin: 0 auto;
-        min-width: unset;
-        font-size: 1rem;
-        padding: 14px 10px;
-    }
 }
