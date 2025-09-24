@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Report a Problem - Marja3i</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("hwBZtkiS76Yp1Q8wl"); // 🔹 استبدل YOUR_PUBLIC_KEY بالمفتاح من EmailJS
+    })();
+
+    function sendReport(e) {
+      e.preventDefault();
+
+      emailjs.sendForm("service_69x2r2u", "template_1fxkzer", "#reportForm")
+        .then(function(response) {
+          alert(document.documentElement.lang === "ar" ? "✅ تم إرسال البلاغ بنجاح، شكرًا لك!" : "✅ Report sent successfully, thank you!");
+        }, function(error) {
+          alert(document.documentElement.lang === "ar" ? "❌ حدث خطأ، حاول مرة أخرى." : "❌ An error occurred, please try again.");
+          console.log(error);
+        });
+    }
+  </script>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #e3eaf6;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      flex: 1;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2d3a4a;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #2d3a4a;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #2d6cdf;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #1e4db3;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: #e3eaf6;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 36px;
+      border-radius: 0 0 18px 18px;
+      box-shadow: 0 2px 12px rgba(44, 62, 80, 0.08);
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo img {
+      height: 44px;
+      border-radius: 8px;
+    }
+
+    .logo span {
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: #1a4b7a;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1a4b7a;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 8px 18px;
+      border-radius: 8px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    nav a:hover {
+      background: #c9daf8;
+      color: #0d2a4d;
+    }
+
+    /* ===== Dropdown ===== */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: #f4f8fc;
+      min-width: 150px;
+      right: 0;
+      top: 110%;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(44, 62, 80, 0.10);
+      padding: 10px 0;
+      z-index: 100;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px 20px;
+      color: #1a4b7a;
+      font-weight: 500;
+      border-radius: 8px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .dropdown-content a:hover {
+      background: #c9daf8;
+      color: #0d2a4d;
+    }
+
+    .dropdown:hover .dropdown-content,
+    .dropdown.open .dropdown-content {
+      display: block;
+    }
+
+    /* ===== Mobile Nav Toggle ===== */
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 2rem;
+      color: #1a4b7a;
+      cursor: pointer;
+      margin-right: 12px;
+    }
+
+    html[dir="rtl"] .nav-toggle {
+      margin-left: 12px;
+      margin-right: 0;
+    }
+
+    /* ===== Footer ===== */
+    .footer {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      padding: 12px 0;
+      background-color: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(6px);
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+      margin-top: auto;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 5px;
+    }
+
+    .footer-links a {
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-size: 16px;
+      padding: 4px 8px;
+    }
+
+    .footer-links a:hover {
+      color: #007bff;
+      text-decoration: underline;
+    }
+
+    .footer p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 480px) {
+      .footer-links {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .footer-links a {
+        font-size: 18px;
+        padding: 6px 12px;
+      }
+
+      .footer p {
+        font-size: 13px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .footer-links a {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo">
+      <span>Marja3i</span>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="القائمة">
+      <i class="fa fa-bars"></i>
+    </button>
+    <nav id="main-nav">
+      <a href="../index.html" id="nav-home">الرئيسية</a>
+      <a href="#" id="nav-courses">المساقات</a>
+      <div class="dropdown">
+        <a href="#" id="nav-more">المزيد ▾</a>
+        <div class="dropdown-content">
+          <a href="#" id="nav-about">من نحن</a>
+          <a href="#" id="nav-report">الإبلاغ عن مشكلة</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#" id="lang-switcher"><i class="fa-solid fa-globe"></i> <span id="lang-label">اللغة</span></a>
+        <div class="dropdown-content">
+          <a href="#" onclick="switchLang('ar'); return false;">العربية</a>
+          <a href="#" onclick="switchLang('en'); return false;">English</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2 id="form-title">Report a Problem</h2>
+    <form id="reportForm" onsubmit="sendReport(event)">
+      <label for="name" id="label-name">Name (optional)</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+
+      <label for="email" id="label-email">Email (optional)</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+
+      <label for="issueType" id="label-issueType">Problem Type</label>
+      <select id="issueType" name="issueType" required>
+        <option value="">-- Select a problem --</option>
+        <option value="login">Login Issue</option>
+        <option value="navigation">Navigation Problem</option>
+        <option value="content">Wrong Content</option>
+        <option value="technical">Technical Error</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="description" id="label-description">Problem Description</label>
+      <textarea id="description" name="description" placeholder="Describe the problem in detail..." required></textarea>
+
+      <button type="submit" id="submit-btn">Submit Report</button>
+    </form>
+  </div>
+
+  <div id="footer-container"></div>
+
+  <script>
+    function renderFooter(lang = document.documentElement.lang) {
+      const isAr = lang === 'ar';
+      const footerContainer = document.getElementById('footer-container');
+      if (footerContainer) {
+        footerContainer.innerHTML = `
+          <footer class="footer">
+            <div class="footer-links">
+              <a href="mailto:innovaahujo@gmail.com"><i class="fas fa-envelope"></i> innovaahujo@gmail.com</a>
+              <a href="https://wa.me/962795868995" target="_blank"><i class="fab fa-whatsapp"></i> ${isAr ? "واتساب" : "WhatsApp"}</a>
+              <a href="https://www.ahu.edu.jo/" target="_blank"><i class="fas fa-globe"></i> ${isAr ? "موقع الجامعة" : "University Website"}</a>
+              <a href="https://www.facebook.com/groups/431319921578977/?ref=share&mibextid=NSMWBT" target="_blank"><i class="fab fa-facebook"></i> ${isAr ? "فيسبوك" : "Facebook"}</a>
+              <a href="https://www.instagram.com/innovahu" target="_blank"><i class="fab fa-instagram"></i> ${isAr ? "إنستقرام" : "Instagram"}</a>
+            </div>
+            <p>${isAr ? "تم التصميم والتطوير بواسطة Innova Team - جامعة الحسين بن طلال" : "Designed and developed by Innova Team - Al-Hussein Bin Talal University"}</p>
+            <p>© 2025 Innova Team - ${isAr ? "جميع الحقوق محفوظة" : "All rights reserved"}</p>
+          </footer>`;
+      }
+    }
+
+    function switchLang(lang) {
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      localStorage.setItem('lang', lang);
+
+      // الهيدر
+      document.getElementById('nav-home').textContent = lang === 'ar' ? 'الرئيسية' : 'Home';
+      document.getElementById('nav-courses').textContent = lang === 'ar' ? 'المساقات' : 'Courses';
+      document.getElementById('nav-more').innerHTML = lang === 'ar' ? 'المزيد ▾' : 'More ▾';
+      document.getElementById('nav-about').textContent = lang === 'ar' ? 'من نحن' : 'About';
+      document.getElementById('nav-report').textContent = lang === 'ar' ? 'الإبلاغ عن مشكلة' : 'Report a Problem';
+      document.getElementById('lang-label').textContent = lang === 'ar' ? 'اللغة' : 'Language';
+
+      // عنوان الصفحة
+      document.getElementById('form-title').textContent = lang === 'ar' ? 'إبلاغ عن مشكلة' : 'Report a Problem';
+
+      // الفورم
+      document.getElementById('label-name').textContent = lang === 'ar' ? 'الاسم (اختياري)' : 'Name (optional)';
+      document.getElementById('name').placeholder = lang === 'ar' ? 'ادخل اسمك' : 'Enter your name';
+
+      document.getElementById('label-email').textContent = lang === 'ar' ? 'البريد الإلكتروني (اختياري)' : 'Email (optional)';
+      document.getElementById('email').placeholder = lang === 'ar' ? 'ادخل بريدك الإلكتروني' : 'Enter your email';
+
+      document.getElementById('label-issueType').textContent = lang === 'ar' ? 'نوع المشكلة' : 'Problem Type';
+      let issueType = document.getElementById('issueType');
+      issueType.options[0].text = lang === 'ar' ? '-- اختر نوع المشكلة --' : '-- Select a problem --';
+      issueType.options[1].text = lang === 'ar' ? 'مشكلة تسجيل الدخول' : 'Login Issue';
+      issueType.options[2].text = lang === 'ar' ? 'مشكلة في التنقل' : 'Navigation Problem';
+      issueType.options[3].text = lang === 'ar' ? 'محتوى غير صحيح' : 'Wrong Content';
+      issueType.options[4].text = lang === 'ar' ? 'خطأ تقني' : 'Technical Error';
+      issueType.options[5].text = lang === 'ar' ? 'أخرى' : 'Other';
+
+      document.getElementById('label-description').textContent = lang === 'ar' ? 'وصف المشكلة' : 'Problem Description';
+      document.getElementById('description').placeholder = lang === 'ar' ? 'يرجى وصف المشكلة بالتفصيل...' : 'Describe the problem in detail...';
+
+      document.getElementById('submit-btn').textContent = lang === 'ar' ? 'إرسال البلاغ' : 'Submit Report';
+
+      // الفوتر
+      renderFooter(lang);
+    }
+
+    window.renderFooter = renderFooter;
+    window.switchLang = switchLang;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const lang = localStorage.getItem('lang') || document.documentElement.lang;
+      switchLang(lang);
+    });
+  </script>
+</body>
+</html>
