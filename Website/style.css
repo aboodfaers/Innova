@@ -21,7 +21,7 @@ body {
 /* Mobile background fix */
 @media (max-width: 768px) {
     body {
-        background: #e3eaf6 url("images/backgroundlaw.png") no-repeat center center;
+        background: #e3eaf6 url("images/backgroundef.jpg") no-repeat center center;
         background-size: cover;
         background-attachment: fixed;
     }
