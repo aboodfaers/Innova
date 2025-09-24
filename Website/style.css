@@ -392,7 +392,7 @@ html[dir="rtl"] .nav-toggle {
 }
 
 /* ===== Mobile Phones ===== */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .main-title {
         font-size: 1.1rem;
         padding: 8px 4px;
@@ -402,7 +402,6 @@ html[dir="rtl"] .nav-toggle {
         display: flex;
         flex-direction: column;
         gap: 8px;
-        /* small gap between buttons */
         align-items: center;
     }
 
@@ -439,4 +438,4 @@ html[dir="rtl"] .nav-toggle {
         border-radius: 8px 8px 0 0;
         font-size: 0.9rem;
     }
-}
+} */
