@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Report a Problem - Marja3i</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -10,7 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   <script>
     (function() {
-      emailjs.init("hwBZtkiS76Yp1Q8wl"); // 🔹 استبدل YOUR_PUBLIC_KEY بالمفتاح من EmailJS
+      emailjs.init("hwBZtkiS76Yp1Q8wl");
     })();
 
     function sendReport(e) {
@@ -26,6 +27,12 @@
     }
   </script>
   <style>
+    html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
     body {
       font-family: "Segoe UI", Arial, sans-serif;
       background: #e3eaf6;
@@ -44,12 +51,14 @@
       border-radius: 15px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       flex: 1;
+      width: 95%;
     }
 
     h2 {
       text-align: center;
       color: #2d3a4a;
       margin-bottom: 20px;
+      font-size: 2rem;
     }
 
     label {
@@ -57,6 +66,7 @@
       margin-top: 15px;
       font-weight: bold;
       color: #2d3a4a;
+      font-size: 1rem;
     }
 
     input, select, textarea {
@@ -65,7 +75,7 @@
       margin-top: 8px;
       border: 1px solid #ccc;
       border-radius: 8px;
-      font-size: 14px;
+      font-size: 1rem;
     }
 
     textarea {
@@ -80,9 +90,10 @@
       border: none;
       border-radius: 8px;
       color: white;
-      font-size: 16px;
+      font-size: 1.1rem;
       cursor: pointer;
       width: 100%;
+      transition: background 0.2s;
     }
 
     button:hover {
@@ -237,26 +248,81 @@
     }
 
     /* Responsive */
+    @media screen and (max-width: 900px) {
+      .container {
+        margin: 30px 10px;
+        padding: 18px;
+      }
+      header {
+        padding: 12px 10px;
+      }
+      .logo img {
+        height: 36px;
+      }
+      .logo span {
+        font-size: 1.1rem;
+      }
+      nav a {
+        font-size: 1rem;
+        padding: 7px 10px;
+      }
+    }
+    @media screen and (max-width: 700px) {
+      .container {
+        margin: 18px 2vw;
+        padding: 10px;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 4vw;
+        border-radius: 0 0 10px 10px;
+      }
+      .logo {
+        margin-bottom: 10px;
+      }
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+      }
+      .dropdown-content {
+        left: 0;
+        right: auto;
+        min-width: 100%;
+        box-shadow: none;
+        position: static;
+        border-radius: 0 0 10px 10px;
+      }
+      .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      nav {
+        display: none;
+        width: 100%;
+      }
+      nav.show {
+        display: flex;
+      }
+    }
     @media screen and (max-width: 480px) {
+      h2 {
+        font-size: 1.2rem;
+      }
       .footer-links {
         flex-direction: column;
         gap: 8px;
         align-items: center;
       }
-
       .footer-links a {
         font-size: 18px;
         padding: 6px 12px;
       }
-
       .footer p {
         font-size: 13px;
-      }
-    }
-
-    @media screen and (max-width: 768px) {
-      .footer-links a {
-        font-size: 17px;
       }
     }
   </style>
@@ -264,7 +330,7 @@
 <body>
   <header>
     <div class="logo">
-      <img src="images/logo.png" alt="Logo">
+      <img src="../images/logo.png" alt="Logo">
       <span>Marja3i</span>
     </div>
     <button class="nav-toggle" id="nav-toggle" aria-label="القائمة">
@@ -319,6 +385,17 @@
   <div id="footer-container"></div>
 
   <script>
+    // Responsive nav toggle for mobile
+    document.addEventListener('DOMContentLoaded', function() {
+      var navToggle = document.getElementById('nav-toggle');
+      var nav = document.getElementById('main-nav');
+      if (navToggle && nav) {
+        navToggle.addEventListener('click', function() {
+          nav.classList.toggle('show');
+        });
+      }
+    });
+
     function renderFooter(lang = document.documentElement.lang) {
       const isAr = lang === 'ar';
       const footerContainer = document.getElementById('footer-container');
