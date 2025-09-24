@@ -237,7 +237,7 @@ html[dir="rtl"] .nav-toggle {
 .button2 {
     background: linear-gradient(90deg, #c9daf8 0%, #7bb1e0 100%);
     border-radius: 18px;
-    padding: 15px 20px;
+    padding: 10px 20px;
     box-shadow: 0 2px 12px rgba(44, 62, 80, 0.10);
     font-size: 1.2rem;
     font-weight: 700;
