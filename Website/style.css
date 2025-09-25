@@ -28,7 +28,7 @@ header {
     padding: 18px 36px;
     border-radius: 0 0 18px 18px;
     box-shadow: 0 2px 12px rgba(44, 62, 80, 0.08);
-    margin-bottom: 24px;
+    margin: 27px;
     position: relative;
     z-index: 10;
 }
@@ -259,12 +259,12 @@ html[dir="rtl"] .nav-toggle {
 
 /* ===== Overlay ===== */
 .overlay {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.322);
     flex: 1;
     padding: 32px;
     border-radius: 18px;
     margin: 0 18px 18px 18px;
-    box-shadow: 0 2px 16px rgba(44, 62, 80, 0.10);
+    box-shadow: 0 2px 16px #14213f;
 }
 
 /* ===== Footer ===== */
