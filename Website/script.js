@@ -1,8 +1,12 @@
+import { initializeFooter } from "./scripts/footer.js";
+import { initializeHeader } from "./scripts/header.js";
+
 // Get saved language or default to Arabic
 let currentLang = localStorage.getItem('lang') || 'ar';
 
+// todo: add language switcher UI and call switchLang on change instead of hardcoding
 // --- Language Switcher ---
-function switchLang(lang) {
+window.switchLang = function(lang) {
     currentLang = lang;
     localStorage.setItem('lang', lang);
 
@@ -34,30 +38,8 @@ function switchLang(lang) {
     if (typeof renderFooter === 'function') renderFooter();
 }
 
-// --- Mobile nav & dropdowns ---
-function initMobileNav() {
-    const navToggle = document.getElementById('nav-toggle');
-    const mainNav = document.getElementById('main-nav');
-    if (navToggle && mainNav) {
-        navToggle.addEventListener('click', () => mainNav.classList.toggle('open'));
-    }
-
-    document.querySelectorAll('.dropdown > a').forEach(drop => {
-        drop.addEventListener('click', function (e) {
-            if (window.innerWidth <= 900) {
-                e.preventDefault();
-                const parent = this.parentElement;
-                parent.classList.toggle('open');
-                document.querySelectorAll('.dropdown').forEach(d => {
-                    if (d !== parent) d.classList.remove('open');
-                });
-            }
-        });
-    });
-}
-
-// --- Initialize ---
 document.addEventListener('DOMContentLoaded', function () {
+    initializeHeader();
+    initializeFooter();
     switchLang(currentLang);
-    initMobileNav();
 });

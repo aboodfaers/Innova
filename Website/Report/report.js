@@ -1,3 +1,6 @@
+import { initializeFooter } from "../scripts/footer.js";
+import { initializeHeader } from "../scripts/header.js";
+
 // Initialize EmailJS
 (function () {
   emailjs.init("hwBZtkiS76Yp1Q8wl");
@@ -19,7 +22,7 @@ function sendReport(e) {
 let currentLang = localStorage.getItem('lang') || 'ar';
 
 // Language switcher
-function switchLang(lang) {
+window.switchLang = function(lang) {
   currentLang = lang;
   localStorage.setItem('lang', lang);
   const isAr = lang === 'ar';
@@ -58,30 +61,8 @@ function switchLang(lang) {
   if (typeof renderFooter === 'function') renderFooter(lang);
 }
 
-// Mobile nav & dropdowns
-function initMobileNav() {
-  const navToggle = document.getElementById('nav-toggle');
-  const mainNav = document.getElementById('main-nav');
-  if (navToggle && mainNav) {
-    navToggle.addEventListener('click', () => mainNav.classList.toggle('open'));
-  }
-
-  document.querySelectorAll('.dropdown > a').forEach(drop => {
-    drop.addEventListener('click', function (e) {
-      if (window.innerWidth <= 900) {
-        e.preventDefault();
-        const parent = this.parentElement;
-        parent.classList.toggle('open');
-        document.querySelectorAll('.dropdown').forEach(d => {
-          if (d !== parent) d.classList.remove('open');
-        });
-      }
-    });
-  });
-}
-
-// Initialize
 document.addEventListener('DOMContentLoaded', function () {
-  switchLang(currentLang);
-  initMobileNav();
+    initializeHeader();
+    initializeFooter();
+    switchLang(currentLang);
 });
