@@ -17,7 +17,7 @@ export function initializeHeader() {
             <a href="#" id="nav-more">المزيد ▾</a>
             <div class="dropdown-content">
                 <a href="#" id="nav-about">من نحن</a>
-                <a href="/Website/Report/report.html" id="nav-report">الإبلاغ عن مشكلة</a>
+                <a href="/Report/report.html" id="nav-report">الإبلاغ عن مشكلة</a>
             </div>
         </div>
         <div class="dropdown">
