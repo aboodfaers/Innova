@@ -12,32 +12,7 @@
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <img src="images/logo.png" alt="Logo">
-      <span>Marja3i</span>
-    </div>
-    <button class="nav-toggle" id="nav-toggle" aria-label="القائمة">
-      <i class="fa fa-bars"></i>
-    </button>
-    <nav id="main-nav">
-      <a href="#" id="nav-home">الرئيسية</a>
-      <a href="Courses/courses.html" id="nav-courses">المساقات</a>
-      <div class="dropdown">
-        <a href="#" id="nav-more">المزيد ▾</a>
-        <div class="dropdown-content">
-          <a href="#" id="nav-about">من نحن</a>
-          <a href="Report/report.html" id="nav-report">الإبلاغ عن مشكلة</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a href="#" id="lang-switcher"><i class="fa-solid fa-globe"></i> <span id="lang-label">اللغة</span></a>
-        <div class="dropdown-content">
-          <a href="#" onclick="switchLang('ar'); return false;">العربية</a>
-          <a href="#" onclick="switchLang('en'); return false;">English</a>
-        </div>
-      </div>
-    </nav>
+  <header id="header">
   </header>
 
   <div class="overlay">
@@ -62,8 +37,7 @@
   </div>
 
   <div id="footer-container"></div>
-  <script src="footer.js"></script>
-  <script src="script.js"></script>
+  <script type="module" src="./script.js"></script>
 </body>
 
 </html>

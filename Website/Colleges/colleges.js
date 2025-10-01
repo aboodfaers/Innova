@@ -1,8 +1,11 @@
+import { initializeFooter } from "../scripts/footer.js";
+import { initializeHeader } from "../scripts/header.js";
+
 // --- Global Language ---
 let currentLang = localStorage.getItem('lang') || 'ar';
 
 // --- Switch Language ---
-function switchLang(lang) {
+window.switchLang = function(lang) {
     currentLang = lang;
     localStorage.setItem('lang', lang);
 
@@ -102,8 +105,7 @@ function performSearch(query) {
     resultsContainer.style.display = "block";
 }
 
-// --- Initialization ---
-document.addEventListener("DOMContentLoaded", function () {
+function initializeSearch() {
     const searchInput = document.getElementById('search-input');
     const resultsContainer = document.getElementById('search-results');
 
@@ -125,28 +127,11 @@ document.addEventListener("DOMContentLoaded", function () {
             resultsContainer.style.display = "none";
         }
     });
+}
 
-    // Mobile Nav Toggle
-    const navToggle = document.getElementById('nav-toggle');
-    const mainNav = document.getElementById('main-nav');
-    if (navToggle && mainNav) {
-        navToggle.addEventListener('click', () => mainNav.classList.toggle('open'));
-    }
-
-    // Dropdowns on Mobile
-    document.querySelectorAll('.dropdown > a').forEach(drop => {
-        drop.addEventListener('click', function (e) {
-            if (window.innerWidth <= 900) {
-                e.preventDefault();
-                const parent = this.parentElement;
-                parent.classList.toggle('open');
-                document.querySelectorAll('.dropdown').forEach(d => {
-                    if (d !== parent) d.classList.remove('open');
-                });
-            }
-        });
-    });
-
-    // Load current language
+document.addEventListener('DOMContentLoaded', function () {
+    initializeHeader();
+    initializeFooter();
+    initializeSearch();
     switchLang(currentLang);
 });

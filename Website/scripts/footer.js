@@ -1,4 +1,6 @@
-function renderFooter(lang = document.documentElement.lang) {
+const lang = localStorage.getItem('lang') || document.documentElement.lang;
+
+export function initializeFooter() {
   const isAr = lang === 'ar';
   const footerContainer = document.getElementById('footer-container');
   if (footerContainer) {
@@ -16,6 +18,3 @@ function renderFooter(lang = document.documentElement.lang) {
         </footer>`;
   }
 }
-
-window.renderFooter = renderFooter;
-document.addEventListener('DOMContentLoaded', () => renderFooter(localStorage.getItem('lang') || document.documentElement.lang));
