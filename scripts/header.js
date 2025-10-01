@@ -4,14 +4,14 @@ export function initializeHeader() {
   
     header.innerHTML = `
     <div class="logo">
-        <img src="/Website/images/logo.png" alt="Logo">
+        <img src="/images/logo.png" alt="Logo">
         <span>Marja3i</span>
     </div>
     <button class="nav-toggle" id="nav-toggle" aria-label="القائمة">
         <i class="fa fa-bars"></i>
     </button>
     <nav id="main-nav">
-        <a href="/Website/index.html" id="nav-home">الرئيسية</a>
+        <a href="/index.html" id="nav-home">الرئيسية</a>
         <a href="Courses/courses.html" id="nav-courses">المساقات</a>
         <div class="dropdown">
             <a href="#" id="nav-more">المزيد ▾</a>
