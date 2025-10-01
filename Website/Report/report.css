@@ -9,10 +9,11 @@
 }
 
 .overlay {
-  background: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.4);
   flex: 1;
   padding: 32px;
-  margin: 0 18px 18px 18px;
+  margin: 18px;
+  margin-top: 0;
   border-radius: 18px;
   box-shadow: 0 2px 16px rgba(44, 62, 80, 0.10);
 }
@@ -61,7 +62,7 @@ header {
   padding: 18px 36px;
   border-radius: 0 0 18px 18px;
   box-shadow: 0 2px 12px rgba(44, 62, 80, 0.08);
-  margin: 27px;
+  margin: 24px;
   position: relative;
   z-index: 10;
 }
@@ -84,7 +85,6 @@ button {
   color: #1a4b7a;
   cursor: pointer;
   margin-right: 12px;
-  width: 10%;
 }
 
 #submit-btn{
@@ -153,11 +153,6 @@ button {
   textarea,
   button {
     font-size: 1rem;
-  }
-
-  .overlay {
-    margin: 0 6px 18px 6px;
-    padding: 16px;
   }
 
   .dropdown-content {

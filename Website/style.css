@@ -28,7 +28,7 @@ header {
     padding: 18px 36px;
     border-radius: 0 0 18px 18px;
     box-shadow: 0 2px 12px rgba(44, 62, 80, 0.08);
-    margin-bottom: 24px;
+    margin: 24px;
     position: relative;
     z-index: 10;
 }
@@ -259,11 +259,12 @@ html[dir="rtl"] .nav-toggle {
 
 /* ===== Overlay ===== */
 .overlay {
-    background: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.4);
     flex: 1;
     padding: 32px;
     border-radius: 18px;
-    margin: 0 18px 18px 18px;
+    margin: 18px;
+    margin-top: 0;
     box-shadow: 0 2px 16px rgba(44, 62, 80, 0.10);
 }
 
@@ -308,11 +309,7 @@ html[dir="rtl"] .nav-toggle {
 
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
-    header {
-        flex-direction: row;
-        align-items: center;
-        padding: 10px 6px;
-    }
+    
 
     .logo {
         flex: 1;
@@ -370,7 +367,8 @@ html[dir="rtl"] .nav-toggle {
 
     .overlay,
     .hero {
-        margin: 0 6px 18px 6px;
+        margin: 18px;
+        margin-top: 0;
     }
 
     .search-bar-container {
