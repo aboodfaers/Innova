@@ -5,7 +5,7 @@ export function initializeHeader() {
     header.innerHTML = `
     <div class="logo">
         <img src="/images/logo.png" alt="Logo">
-        <span>Marja3i</span>
+        <span>marja3</span>
     </div>
     <button class="nav-toggle" id="nav-toggle" aria-label="القائمة">
         <i class="fa fa-bars"></i>
