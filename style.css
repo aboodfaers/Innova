@@ -21,7 +21,7 @@ body {
 
 /* ===== Header ===== */
 header {
-    background: #fffddd;
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -200,7 +200,7 @@ html[dir="rtl"] .nav-toggle {
     margin: 40px 0 30px;
     font-weight: 800;
     color: #1a4b7a;
-    background: #fffddd;
+    background: #ffffff;
     display: inline-block;
     padding: 18px 40px;
     border-radius: 18px;
@@ -273,7 +273,7 @@ html[dir="rtl"] .nav-toggle {
     width: 100%;
     text-align: center;
     padding: 16px 0 10px 0;
-    background: #fffddd;
+    background: #fafafa;
     box-shadow: 0 -2px 12px rgba(20, 21, 39, 0.08);
     border-top: 1.5px solid #7bb1e0;
     margin-top: auto;
