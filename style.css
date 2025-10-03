@@ -9,7 +9,7 @@
 
 body {
     font-family: "Segoe UI", Arial, sans-serif;
-    background: #fffddd url("images/backgrounde.png") no-repeat center center;
+    background: #ffffff url("images/backgrounde.png") no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     color: #2d3a4a;
@@ -69,7 +69,7 @@ nav a {
 }
 
 nav a:hover {
-    background: #fffddd;
+    background: #ffffff;
     color: #0d2a4d;
 }
 
@@ -101,7 +101,7 @@ nav a:hover {
 }
 
 .dropdown-content a:hover {
-    background: #fffddd;
+    background: #ffffff;
     color: #0d2a4d;
 }
 
@@ -227,7 +227,7 @@ html[dir="rtl"] .nav-toggle {
 
 .button,
 .button2 {
-    background: linear-gradient(90deg, #fdfdf3 0%, #7bd9e0 100%);
+    background: linear-gradient(90deg, #ffffff 0%, #79dee6 100%);
     border-radius: 18px;
     padding: 10px 20px;
     box-shadow: 0 2px 12px rgba(44, 62, 80, 0.10);
@@ -324,7 +324,7 @@ html[dir="rtl"] .nav-toggle {
         top: 100%;
         right: 0;
         left: 0;
-        background: #fffddd;
+        background: #ffffff;
         flex-direction: column;
         align-items: flex-start;
         gap: 0;
@@ -383,7 +383,7 @@ html[dir="rtl"] .nav-toggle {
 /* Mobile background fix */
 @media (max-width: 768px) {
     body {
-        background: #fffddd url("images/backgroundef.jpg") no-repeat center center;
+        background: #ffffff url("images/backgroundef.jpg") no-repeat center center;
         background-size: cover;
         background-attachment: fixed;
     }

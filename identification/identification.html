@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>من نحن - مرجعي</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #f8f9fa;
+      color: #2d3a4a;
+      line-height: 1.8;
+    }
+    /* ===== Header ===== */
+header {
+    background: #e3eaf6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 36px;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 2px 12px rgba(44, 62, 80, 0.08);
+    margin: 24px;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    height: 44px;
+    border-radius: 8px;
+}
+
+.logo span {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #1a4b7a;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1a4b7a;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 8px 18px;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    background: #c9daf8;
+    color: #0d2a4d;
+}
+
+/* ===== Dropdown ===== */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #f4f8fc;
+    min-width: 150px;
+    right: 0;
+    top: 110%;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(44, 62, 80, 0.10);
+    padding: 10px 0;
+    z-index: 100;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    color: #1a4b7a;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-content a:hover {
+    background: #c9daf8;
+    color: #0d2a4d;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown.open .dropdown-content {
+    display: block;
+}
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #006d77;
+      margin-top: 1.5rem;
+    }
+    p {
+      margin: 0.5rem 0;
+    }
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .card {
+      background: #f1faff;
+      padding: 1rem;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .card i {
+      font-size: 2rem;
+      color: #118ab2;
+      margin-bottom: 0.5rem;
+    }
+/* ===== Footer ===== */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 16px 0 10px 0;
+    background: #e3eaf6;
+    box-shadow: 0 -2px 12px rgba(44, 62, 80, 0.06);
+    border-top: 1.5px solid #7bb1e0;
+    margin-top: auto;
+    border-radius: 18px 18px 0 0;
+    font-size: 1rem;
+    color: #1a4b7a;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #1a4b7a;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #0d2a4d;
+    text-decoration: underline;
+}
+
+.footer p {
+    margin: 6px 0;
+    font-size: 0.95rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+    
+
+    .logo {
+        flex: 1;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 0 0 10px 0;
+        display: none;
+        z-index: 100;
+        border-radius: 0 0 18px 18px;
+        box-shadow: 0 2px 12px rgba(44, 62, 80, 0.08);
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav>a,
+    nav>.dropdown {
+        width: 100%;
+        padding: 12px 24px;
+        border-radius: 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background: #f4f8fc;
+        border-radius: 0;
+        min-width: 100%;
+        padding: 0;
+    }
+
+    .dropdown-content a {
+        padding: 12px 32px;
+        border-radius: 0;
+    }
+
+    .main-title {
+        font-size: 1.7rem;
+        padding: 12px 10px;
+    }
+
+    .overlay,
+    .hero {
+        margin: 18px;
+        margin-top: 0;
+    }
+
+    .search-bar-container {
+        margin: 18px 0 12px 0;
+    }
+
+    .search-box {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+/* Mobile background fix */
+@media (max-width: 768px) {
+    body {
+        background: #ffffff url("images/backgroundef.jpg") no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+  </style>
+</head>
+<body>
+  <header id="header"></header>
+
+
+  <div class="container">
+    <h2>رؤيتنا</h2>
+    <p>
+      مرجعي هو موقع إلكتروني صُمم خصيصًا لطلبة جامعة الحسين بن طلال ليكون مرجعًا أكاديميًا رقميًا، 
+      يسهّل الوصول إلى المعلومات الدراسية، الخطط الأكاديمية، ومحاكاة الامتحانات.
+    </p>
+
+    <h2>رسالتنا</h2>
+    <p>
+      توفير بيئة تعليمية مبتكرة تدعم الطلبة في مسيرتهم الجامعية، 
+      وتُعزز من تجربتهم التعليمية باستخدام التكنولوجيا الحديثة.
+    </p>
+
+    <h2>أهدافنا</h2>
+    <ul>
+      <li>تسهيل وصول الطلبة إلى الخطط الدراسية والمراجع الأكاديمية.</li>
+      <li>تقديم محاكاة للامتحانات لمساعدة الطلبة في التحضير الجيد.</li>
+      <li>جمع الكليات والتخصصات في مكان واحد لتبسيط عملية البحث.</li>
+      <li>دعم التواصل بين الطلبة والإدارة بشكل أفضل.</li>
+    </ul>
+
+    <h2>فريق العمل</h2>
+    <div class="team">
+      <div class="card">
+        <i class="fa-solid fa-user-graduate"></i>
+        <h3>Innova Team</h3>
+        <p>التصميم والتطوير</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-lightbulb"></i>
+        <h3>Marja3</h3>
+        <p>الفكرة والمحتوى</p>
+      </div>
+    </div>
+  </div>
+  <div id="footer-container"></div>
+
+  <script type="module" src="../Colleges/colleges.js"></script>
+
+</body>
+</html>
