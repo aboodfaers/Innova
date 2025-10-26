@@ -1,0 +1,146 @@
+{
+  "business": {
+    "title_ar": "كلية إدارة الأعمال",
+    "title_en": "Business Administration",
+    "courses": [
+      { "ar": "أساسيات إدارة الأعمال", "en": "Business Fundamentals", "url": "#" },
+      { "ar": "إدارة التسويق", "en": "Marketing Management", "url": "#" },
+      { "ar": "إدارة الموارد البشرية", "en": "Human Resource Management", "url": "#" },
+      { "ar": "إدارة العمليات", "en": "Operations Management", "url": "#" },
+      { "ar": "إدارة المشاريع", "en": "Project Management", "url": "#" },
+      { "ar": "إدارة الابتكار", "en": "Innovation Management", "url": "#" },
+      { "ar": "إدارة المخاطر", "en": "Risk Management", "url": "#" }
+    ]
+  },
+  "cbs": {
+    "title_ar": "كلية التمريض والعلوم الصحية",
+    "title_en": "Nursing & Health Sciences",
+    "courses": [
+      { "ar": "أساسيات التمريض", "en": "Nursing Fundamentals", "url": "#" },
+      { "ar": "تمريض صحة المجتمع", "en": "Community Health Nursing", "url": "#" },
+      { "ar": "تمريض الأطفال", "en": "Pediatric Nursing", "url": "#" },
+      { "ar": "تمريض البالغين", "en": "Adult Nursing", "url": "#" },
+      { "ar": "تمريض الحالات الحرجة", "en": "Critical Care Nursing", "url": "#" },
+      { "ar": "تمريض الصحة النفسية", "en": "Mental Health Nursing", "url": "#" },
+      { "ar": "تمريض الأمومة", "en": "Maternity Nursing", "url": "#" }
+    ]
+  },
+  "education": {
+    "title_ar": "كلية العلوم التربية",
+    "title_en": "Education Sciences",
+    "courses": [
+      { "ar": "أساسيات التربية", "en": "Foundations of Education", "url": "#" },
+      { "ar": "تكنولوجيا التعليم", "en": "Educational Technology", "url": "#" },
+      { "ar": "علم النفس التربوي", "en": "Educational Psychology", "url": "#" },
+      { "ar": "تمريض البالغين", "en": "Adult Nursing", "url": "#" },
+      { "ar": "تمريض الحالات الحرجة", "en": "Critical Care Nursing", "url": "#" },
+      { "ar": "تمريض الصحة النفسية", "en": "Mental Health Nursing", "url": "#" },
+      { "ar": "تمريض الأمومة", "en": "Maternity Nursing", "url": "#" }
+    ]
+  },
+  "engineering": {
+    "title_ar": "كلية الهندسة",
+    "title_en": "Engineering",
+    "courses": [
+      { "ar": "أساسيات الهندسة", "en": "Engineering Fundamentals", "url": "#" },
+      { "ar": "الهندسة المدنية", "en": "Civil Engineering", "url": "#" },
+      { "ar": "الهندسة الكهربائية", "en": "Electrical Engineering", "url": "#" },
+      { "ar": "الهندسة الميكانيكية", "en": "Mechanical Engineering", "url": "#" },
+      { "ar": "الهندسة المعمارية", "en": "Architectural Engineering", "url": "#" },
+      { "ar": "الهندسة الصناعية", "en": "Industrial Engineering", "url": "#" },
+      { "ar": "الهندسة البيئية", "en": "Environmental Engineering", "url": "#" }
+    ]
+  },
+  "law": {
+    "title_ar": "كلية القانون",
+    "title_en": "Law",
+    "courses": [
+      { "ar": "أساسيات القانون", "en": "Fundamentals of Law", "url": "#" },
+      { "ar": "القانون الجنائي", "en": "Criminal Law", "url": "#" },
+      { "ar": "القانون المدني", "en": "Civil Law", "url": "#" },
+      { "ar": "القانون الإداري", "en": "Administrative Law", "url": "#" },
+      { "ar": "القانون الدولي", "en": "International Law", "url": "#" },
+      { "ar": "قانون حقوق الإنسان", "en": "Human Rights Law", "url": "#" },
+      { "ar": "قانون الملكية الفكرية", "en": "Intellectual Property Law", "url": "#" }
+    ]
+  },
+  "literature": {
+    "title_ar": " كلية الآداب",
+    "title_en": "College of literature",
+    "courses": [
+      { "ar": "أساسيات الأدب", "en": "Literature Fundamentals", "url": "#" },
+      { "ar": "الأدب العربي", "en": "Arabic Literature", "url": "#" },
+      { "ar": "الأدب الإنجليزي", "en": "English Literature", "url": "#" },
+      { "ar": "الأدب المقارن", "en": "Comparative Literature", "url": "#" },
+      { "ar": "تمريض الحالات الحرجة", "en": "Critical Care Nursing", "url": "#" },
+      { "ar": "تمريض الصحة النفسية", "en": "Mental Health Nursing", "url": "#" },
+      { "ar": "تمريض الأمومة", "en": "Maternity Nursing", "url": "#" }
+    ]
+  },
+  "mks": {
+    "title_ar": "كلية التمريض والعلوم الصحية",
+    "title_en": "Nursing & Health Sciences",
+    "courses": [
+      { "ar": "أساسيات التمريض", "en": "Nursing Fundamentals", "url": "#" },
+      { "ar": "تمريض صحة المجتمع", "en": "Community Health Nursing", "url": "#" },
+      { "ar": "تمريض الأطفال", "en": "Pediatric Nursing", "url": "#" },
+      { "ar": "تمريض البالغين", "en": "Adult Nursing", "url": "#" },
+      { "ar": "تمريض الحالات الحرجة", "en": "Critical Care Nursing", "url": "#" },
+      { "ar": "تمريض الصحة النفسية", "en": "Mental Health Nursing", "url": "#" },
+      { "ar": "تمريض الأمومة", "en": "Maternity Nursing", "url": "#" }
+    ]
+  },
+  "nursing": {
+    "title_ar": "كلية التمريض والعلوم الصحية",
+    "title_en": "Nursing & Health Sciences",
+    "courses": [
+      { "ar": "أساسيات التمريض", "en": "Nursing Fundamentals", "url": "#" },
+      { "ar": "تمريض صحة المجتمع", "en": "Community Health Nursing", "url": "#" },
+      { "ar": "تمريض الأطفال", "en": "Pediatric Nursing", "url": "#" },
+      { "ar": "تمريض البالغين", "en": "Adult Nursing", "url": "#" },
+      { "ar": "تمريض الحالات الحرجة", "en": "Critical Care Nursing", "url": "#" },
+      { "ar": "تمريض الصحة النفسية", "en": "Mental Health Nursing", "url": "#" },
+      { "ar": "تمريض الأمومة", "en": "Maternity Nursing", "url": "#" }
+    ]
+  },
+  "science": {
+    "title_ar": "كلية العلوم",
+    "title_en": "College of Science",
+    "courses": [
+      { "ar": "أساسيات العلوم", "en": "Fundamentals of Science", "url": "#" },
+      { "ar": "علوم الحياة", "en": "Life Sciences", "url": "#" },
+      { "ar": "الفيزياء", "en": "Physics", "url": "#" },
+      { "ar": "الكيمياء", "en": "Chemistry", "url": "#" },
+      { "ar": "علوم الحاسوب", "en": "Computer Science", "url": "#" },
+      { "ar": "الرياضيات", "en": "Mathematics", "url": "#" },
+      { "ar": "علم النفس", "en": "Psychology", "url": "#" },
+      { "ar": "علم الاجتماع", "en": "Sociology", "url": "#" }
+    ]
+  },
+  "tech": {
+    "title_ar": "كلية تكنولوجيا المعلومات",
+    "title_en": "College of Information Technology",
+    "courses": [
+      { "ar": "أساسيات تكنولوجيا المعلومات", "en": "Fundamentals of Information Technology", "url": "#" },
+      { "ar": "برمجة التطبيقات", "en": "Application Programming", "url": "#" },
+      { "ar": "إدارة قواعد البيانات", "en": "Database Management", "url": "#" },
+      { "ar": "أمن المعلومات", "en": "Information Security", "url": "#" },
+      { "ar": "تحليل البيانات", "en": "Data Analysis", "url": "#" },
+      { "ar": "تطوير الويب", "en": "Web Development", "url": "#" },
+      { "ar": "الذكاء الاصطناعي", "en": "Artificial Intelligence", "url": "#" }
+    ]
+  },
+  "tourism": {
+    "title_ar": "كلية الاثار",
+    "title_en": "College of Archaeology",
+    "courses": [
+      { "ar": "أساسيات الاثار", "en": "Fundamentals of Archaeology", "url": "#" },
+      { "ar": "تاريخ الفن", "en": "History of Art", "url": "#" },
+      { "ar": "علم الآثار", "en": "Archaeological Science", "url": "#" },
+      { "ar": "الحفاظ على التراث", "en": "Heritage Conservation", "url": "#" },
+      { "ar": "تمريض الحالات الحرجة", "en": "Critical Care Nursing", "url": "#" },
+      { "ar": "تمريض الصحة النفسية", "en": "Mental Health Nursing", "url": "#" },
+      { "ar": "تمريض الأمومة", "en": "Maternity Nursing", "url": "#" }
+    ]
+  }
+}

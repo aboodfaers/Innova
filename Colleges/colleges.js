@@ -4,6 +4,31 @@ import { initializeHeader } from "../scripts/header.js";
 // --- Global Language ---
 let currentLang = localStorage.getItem('lang') || 'ar';
 
+// --- Load college data from JSON (by page slug) ---
+async function loadCollegeData() {
+    try {
+        // Determine slug from current file name, e.g. engineering.html -> engineering
+        const slug = (window.location.pathname.split('/').pop() || '').replace(/\.html?$/i, '');
+        // From Colleges/html/*.html to Data/coursesUrl/colleges.json
+        const res = await fetch('../../Data/coursesUrl/colleges.json', { cache: 'no-store' });
+        if (!res.ok) throw new Error(`Failed to load colleges.json: ${res.status}`);
+        const all = await res.json();
+        const data = all[slug];
+        if (!data) {
+            console.warn(`[Colleges] No data found for slug '${slug}' in colleges.json`);
+            window.collegeCourses = { title_ar: '', title_en: '', courses: [] };
+            return;
+        }
+        window.collegeCourses = data;
+    } catch (err) {
+        console.error('[Colleges] Error loading college data:', err);
+        // Graceful fallback
+        if (!window.collegeCourses) {
+            window.collegeCourses = { title_ar: '', title_en: '', courses: [] };
+        }
+    }
+}
+
 // --- Switch Language ---
 window.switchLang = function(lang) {
     currentLang = lang;
@@ -14,7 +39,10 @@ window.switchLang = function(lang) {
     document.documentElement.dir = isAr ? 'rtl' : 'ltr';
 
     // Header
-    document.getElementById('main-title').textContent = isAr ? window.collegeCourses.title_ar : window.collegeCourses.title_en;
+    const titleEl = document.getElementById('main-title');
+    if (titleEl && window.collegeCourses) {
+        titleEl.textContent = isAr ? window.collegeCourses.title_ar : window.collegeCourses.title_en;
+    }
     document.getElementById('nav-home').textContent = isAr ? 'الرئيسية' : 'Home';
     document.getElementById('nav-courses').textContent = isAr ? 'المساقات' : 'Courses';
     document.getElementById('nav-more').textContent = isAr ? 'المزيد ▾' : 'More ▾';
@@ -130,8 +158,11 @@ function initializeSearch() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    initializeHeader();
-    initializeFooter();
-    initializeSearch();
-    switchLang(currentLang);
+    (async () => {
+        initializeHeader();
+        initializeFooter();
+        await loadCollegeData();
+        initializeSearch();
+        switchLang(currentLang);
+    })();
 });
