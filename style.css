@@ -381,7 +381,7 @@ html[dir="rtl"] .nav-toggle {
     }
 }
 /* Mobile background fix */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     body {
         background: #e3eaf6 url("images/backgroundef.jpg") no-repeat center center;
         background-size: cover;
