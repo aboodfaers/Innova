@@ -78,29 +78,47 @@
     ]
   },
   "mks": {
-    "title_ar": "كلية التمريض والعلوم الصحية",
-    "title_en": "Nursing & Health Sciences",
-    "courses": [
-      { "ar": "أساسيات التمريض", "en": "Nursing Fundamentals", "url": "#" },
-      { "ar": "تمريض صحة المجتمع", "en": "Community Health Nursing", "url": "#" },
-      { "ar": "تمريض الأطفال", "en": "Pediatric Nursing", "url": "#" },
-      { "ar": "تمريض البالغين", "en": "Adult Nursing", "url": "#" },
-      { "ar": "تمريض الحالات الحرجة", "en": "Critical Care Nursing", "url": "#" },
-      { "ar": "تمريض الصحة النفسية", "en": "Mental Health Nursing", "url": "#" },
-      { "ar": "تمريض الأمومة", "en": "Maternity Nursing", "url": "#" }
-    ]
+    "title_ar": "الخطة الدراسية",
+    "title_en": "Study plan"
   },
   "nursing": {
     "title_ar": "كلية التمريض والعلوم الصحية",
     "title_en": "Nursing & Health Sciences",
     "courses": [
-      { "ar": "أساسيات التمريض", "en": "Nursing Fundamentals", "url": "#" },
-      { "ar": "تمريض صحة المجتمع", "en": "Community Health Nursing", "url": "#" },
-      { "ar": "تمريض الأطفال", "en": "Pediatric Nursing", "url": "#" },
-      { "ar": "تمريض البالغين", "en": "Adult Nursing", "url": "#" },
-      { "ar": "تمريض الحالات الحرجة", "en": "Critical Care Nursing", "url": "#" },
-      { "ar": "تمريض الصحة النفسية", "en": "Mental Health Nursing", "url": "#" },
-      { "ar": "تمريض الأمومة", "en": "Maternity Nursing", "url": "#" }
+      { "ar": "اتجاهات وقضايا وأخلاقيات التمريض", "en": "Trends, Issues, and Ethics in Nursing", "url": "https://drive.google.com/drive/folders/1izW-ZkZd-w10bmwQR1MuKdXfQ3JJYZmJ?usp=drive_link" },
+      { "ar": "أساسيات التمريض", "en": "Nursing Fundamentals", "url": "https://drive.google.com/drive/folders/1XmiWNXESYzlWM1UIq3R9LFMPbY5yrCzP?usp=drive_link" },
+      { "ar": "أساسيات التمريض (عملي)", "en": "Nursing Fundamentals (Practical)", "url": "https://drive.google.com/drive/folders/1zqt-bsVdkiKl_X1FsOLegcpBT471-ltJ?usp=drive_link" },
+      { "ar": "الاتصال والتعليم الصحي", "en": "Health Communication and Education", "url": "https://drive.google.com/drive/folders/1GmQT275i9Fu-82wr8BKBGj1mAdq-6yW4?usp=drive_link" },
+      { "ar": "الإدارة في التمريض", "en": "Nursing Management", "url": "https://drive.google.com/drive/folders/1OVZ9wIccxGc7bSHvBkr18GpVDAiFCHF4?usp=drive_link" },
+      { "ar": "الإدارة في التمريض (عملي)", "en": "Nursing Management (Practical)", "url": "https://drive.google.com/drive/folders/1kwPKEDgSpoHbwEgMhbHBpql96IiG8YnI?usp=drive_link" },
+      { "ar": "التدريب السريري المكثف", "en": "Intensive Clinical Training", "url": "https://drive.google.com/drive/folders/12tP4bNZsK5frpJ5jsbNEFAOvbU9j9iuR?usp=drive_link" },
+      { "ar": "التغذية في الصحة والمرض", "en": "Nutrition in Health and Disease", "url": "https://drive.google.com/drive/folders/1C4LttJ3WClx-XulI4Xm0LtGfHroouzBG?usp=drive_link" },
+      { "ar": "التقييم الصحي", "en": "Health Assessment", "url": "https://drive.google.com/drive/folders/1LgUBugSw3jEERf6nNzbNPQ-UJVrpTBpg?usp=drive_link" },
+      { "ar": "التقييم الصحي (عملي)", "en": "Health Assessment (Practical)", "url": "https://drive.google.com/drive/folders/1rApks6mdet5YjbxkD5K6n7zhfNXIF1Up?usp=drive_link" },
+      { "ar": "النمو والتطور", "en": "Growth and Development", "url": "https://drive.google.com/drive/folders/1uEdaoyZAeFGRC1H8bjYoIeRgnaSPJSd9?usp=drive_link" },
+      { "ar": "تمريض الرعاية الحثيثة والطوارئ", "en": "Critical Care and Emergency Nursing", "url": "https://drive.google.com/drive/folders/1eg7DNQZv8zx55Ehx5U0VGHgIKZcOaDA0?usp=drive_link" },
+      { "ar": "تمريض الرعاية الحثيثة والطوارئ السريري", "en": "Critical Care and Emergency Nursing (Clinical)", "url": "https://drive.google.com/drive/folders/1SK1PKgbAxXfnc75CAewefCva6RJwKIFd?usp=drive_link" },
+      { "ar": "تمريض الصحة النفسية", "en": "Mental Health Nursing", "url": "https://drive.google.com/drive/folders/1eJX9VRY0YDwHkNEyVqsMGm82PzMDvu4q?usp=drive_link" },
+      { "ar": "تمريض الصحة النفسية (عملي)", "en": "Mental Health Nursing (Practical)", "url": "https://drive.google.com/drive/folders/1WkiuKa-4xpyVmQCBO_xsbDWAWoXWHFB4?usp=drive_link" },
+      { "ar": "تمريض صحة الأم", "en": "Maternal Health Nursing", "url": "https://drive.google.com/drive/folders/1iqoTxcX-icJbZXxEbL_Asvg6dUxHCfRK?usp=drive_link" },
+      { "ar": "تمريض صحة الأم السريري", "en": "Maternal Health Nursing (Clinical)", "url": "https://drive.google.com/drive/folders/1xbtpK1bd83Eb8GcNWqysgQJ7LTiGgMfZ?usp=drive_link" },
+      { "ar": "تمريض صحة البالغين - السريري (1)", "en": "Adult Health Nursing - Clinical (1)", "url": "https://drive.google.com/drive/folders/1foddQu9YVi_8HKFkZNotU0DHV_oh2h-D?usp=drive_link" },
+      { "ar": "تمريض صحة البالغين - السريري (2)", "en": "Adult Health Nursing - Clinical (2)", "url": "https://drive.google.com/drive/folders/1vZJWt_cWfV3jdhEui1FbNemY6f8NpQAD?usp=drive_link" },
+      { "ar": "تمريض صحة البالغين (1)", "en": "Adult Health Nursing (1)", "url": "https://drive.google.com/drive/folders/1qazxGiIvuInWWsVGjNcZSFnHipQ92THj?usp=drive_link" },
+      { "ar": "تمريض صحة البالغين (2)", "en": "Adult Health Nursing (2)", "url": "https://drive.google.com/drive/folders/1zr3Y6SvW4R6lqcBEddeHed6HDgPscTHS?usp=drive_link" },
+      { "ar": "تمريض صحة الطفل", "en": "Child Health Nursing", "url": "https://drive.google.com/drive/folders/1Np5nS0rpA3M1NCPjAQ4UyRbW14W4JXOa?usp=drive_link" },
+      { "ar": "تمريض صحة الطفل السريري", "en": "Child Health Nursing (Clinical)", "url": "https://drive.google.com/drive/folders/1bpBfL6igGbB7sxmRkJxNe4t8hiM2LQK0?usp=drive_link" },
+      { "ar": "تمريض صحة مجتمع", "en": "Community Health Nursing", "url": "https://drive.google.com/drive/folders/1B5LCpoz8Kw7UABg73lb6zYWMVRwyMDdV?usp=drive_link" },
+      { "ar": "تمريض صحة مجتمع سريري", "en": "Community Health Nursing (Clinical)", "url": "https://drive.google.com/drive/folders/1S0vfPJcIRxCehmA-W-UOlecp1HS-GAht?usp=drive_link" },
+      { "ar": "صحة مسنين", "en": "Geriatric Health", "url": "https://drive.google.com/drive/folders/1JjlfHEfiVDsRUW6I8kEuAcOMU1SfopdB?usp=drive_link" },
+      { "ar": "علم الأدوية", "en": "Pharmacology", "url": "https://drive.google.com/drive/folders/1XO2xl3AicKKn7o8UlGEqxcUvxipIzTeY?usp=drive_link" },
+      { "ar": "علم التشريح", "en": "Anatomy", "url": "https://drive.google.com/drive/folders/1XiMWhElertNGDK2EZBKoVCUM9RYT6i3a?usp=drive_link" },
+      { "ar": "علم الوبائيات والإحصاء الحيوي", "en": "Epidemiology and Biostatistics", "url": "https://drive.google.com/drive/folders/1dAUiwMIsR64iVE7diblzHN2VscDNN4v3?usp=drive_link" },
+      { "ar": "علم وظائف أعضاء الإنسان", "en": "Human Physiology", "url": "https://drive.google.com/drive/folders/1vdbHWLtqsdgnImva03H-mjMnnJMtn6yV?usp=drive_link" },
+      { "ar": "فسيولوجيا مرضية", "en": "Pathophysiology", "url": "https://drive.google.com/drive/folders/18Mo-qDsD0lhFo2PlvSQdHHH1e3lAG4jn?usp=drive_link" },
+      { "ar": "مبادئ الصحة العامة", "en": "Principles of Public Health", "url": "https://drive.google.com/drive/folders/1TkDSzLeY7p77ClN3mn_A1jCFyUJMLkVd?usp=drive_link" },
+      { "ar": "مبادئ في الإسعاف والطوارئ", "en": "Principles of First Aid and Emergency Care", "url": "https://drive.google.com/drive/folders/1DhBmLE-seyKympX6jR94xAS1u-figJqo?usp=drive_link" },
+      { "ar": "منهجية البحث العلمي", "en": "Research Methodology", "url": "https://drive.google.com/drive/folders/1Al5wPTCZgkcXI5-G1-YI8uqFnBMIa54u?usp=drive_link" }
     ]
   },
   "science": {
