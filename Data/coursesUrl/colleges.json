@@ -13,8 +13,8 @@
     ]
   },
   "cbs": {
-    "title_ar": "كلية التمريض والعلوم الصحية",
-    "title_en": "Nursing & Health Sciences",
+    "title_ar": "محاكاة الاختبارات",
+    "title_en": "Exams simulation",
     "courses": [
       { "ar": "أساسيات التمريض", "en": "Nursing Fundamentals", "url": "#" },
       { "ar": "تمريض صحة المجتمع", "en": "Community Health Nursing", "url": "#" },
