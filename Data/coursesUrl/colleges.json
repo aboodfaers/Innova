@@ -15,15 +15,7 @@
   "cbs": {
     "title_ar": "محاكاة الاختبارات",
     "title_en": "Exams simulation",
-    "courses": [
-      { "ar": "أساسيات التمريض", "en": "Nursing Fundamentals", "url": "#" },
-      { "ar": "تمريض صحة المجتمع", "en": "Community Health Nursing", "url": "#" },
-      { "ar": "تمريض الأطفال", "en": "Pediatric Nursing", "url": "#" },
-      { "ar": "تمريض البالغين", "en": "Adult Nursing", "url": "#" },
-      { "ar": "تمريض الحالات الحرجة", "en": "Critical Care Nursing", "url": "#" },
-      { "ar": "تمريض الصحة النفسية", "en": "Mental Health Nursing", "url": "#" },
-      { "ar": "تمريض الأمومة", "en": "Maternity Nursing", "url": "#" }
-    ]
+    "courses": []
   },
   "education": {
     "title_ar": "كلية العلوم التربية",

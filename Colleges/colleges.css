@@ -113,14 +113,32 @@ body {
     background-color: rgba(244, 248, 252, 0.92);
     padding: 30px;
     border-radius: 15px;
-    width: 400px;
+    width: 100%;
+    max-width: 860px;
     margin: 40px auto 0 auto;
 }
 
-ul {
+#courses-ul {
     list-style-type: disc;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
+    padding-inline-start: 20px;
+    column-gap: 36px;
+}
+
+#courses-ul li {
+    break-inside: avoid;
+    margin-bottom: 12px;
+}
+
+#courses-ul a {
+    color: #1a4b7a;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+#courses-ul a:hover {
+    color: #0d2a4d;
 }
 
 /* ===== Responsive ===== */
@@ -150,7 +168,7 @@ ul {
         margin-top: 40px;
     }
 
-    ul {
+    #courses-ul {
         font-size: 14px;
     }
 
@@ -193,5 +211,11 @@ ul {
         width: 98%;
         padding: 10px;
         margin-top: 20px;
+    }
+}
+
+@media (min-width: 900px) {
+    #courses-ul {
+        column-count: 2;
     }
 }
