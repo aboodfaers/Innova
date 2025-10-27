@@ -1,0 +1,157 @@
+/* ===== Shared Header ===== */
+header {
+    background: #e3eaf6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 36px;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 2px 12px rgba(44, 62, 80, 0.08);
+    margin: 24px;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.logo img {
+    height: 59px;
+    border-radius: 8px;
+}
+
+.logo span {
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: #1a4b7a;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1a4b7a;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 8px 18px;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    background: #c9daf8;
+    color: #0d2a4d;
+}
+
+/* ===== Dropdown ===== */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #f4f8fc;
+    min-width: 150px;
+    right: 0;
+    top: 110%;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(44, 62, 80, 0.10);
+    padding: 10px 0;
+    z-index: 100;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    color: #1a4b7a;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-content a:hover {
+    background: #c9daf8;
+    color: #0d2a4d;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown.open .dropdown-content {
+    display: block;
+}
+
+/* ===== Mobile Nav Toggle ===== */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #1a4b7a;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+html[dir="rtl"] .nav-toggle {
+    margin-left: 12px;
+    margin-right: 0;
+}
+
+@media (max-width: 900px) {
+    .logo {
+        flex: 1;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #e3eaf6;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 0 0 10px 0;
+        display: none;
+        z-index: 100;
+        border-radius: 0 0 18px 18px;
+        box-shadow: 0 2px 12px rgba(44, 62, 80, 0.08);
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav > a,
+    nav > .dropdown {
+        width: 100%;
+        padding: 12px 24px;
+        border-radius: 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background: #f4f8fc;
+        border-radius: 0;
+        min-width: 100%;
+        padding: 0;
+    }
+
+    .dropdown-content a {
+        padding: 12px 32px;
+        border-radius: 0;
+    }
+}
