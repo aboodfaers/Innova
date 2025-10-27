@@ -1,5 +1,6 @@
 body {
   background: linear-gradient(140deg, #e3eaf6 0%, #f8fbff 40%, #ffffff 100%);
+  font-family: "Segoe UI", Arial, sans-serif;
   color: #1a365d;
   min-height: 100vh;
   display: flex;
