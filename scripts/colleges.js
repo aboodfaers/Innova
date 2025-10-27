@@ -1,17 +1,16 @@
-import { initializeFooter } from "../scripts/footer.js";
-import { initializeHeader } from "../scripts/header.js";
+import { initializeFooter } from "./footer.js";
+import { initializeHeader, updateNavigationLabels } from "./header.js";
 
-// --- Global Language ---
-let currentLang = localStorage.getItem('lang') || 'ar';
+let currentLang = localStorage.getItem("lang") || document.documentElement.lang || "ar";
 let currentSlug = null;
-const mobileBgStyleId = 'college-mobile-background';
+const mobileBgStyleId = "college-mobile-background";
 
 function resolveSlug() {
     const params = new URLSearchParams(window.location.search);
-    const fromQuery = params.get('slug');
+    const fromQuery = params.get("slug");
     if (fromQuery) return fromQuery.trim().toLowerCase();
 
-    const filename = (window.location.pathname.split('/').pop() || '').replace(/\.html?$/i, '');
+    const filename = (window.location.pathname.split("/").pop() || "").replace(/\.html?$/i, "");
     return filename || null;
 }
 
@@ -20,7 +19,7 @@ function applyBranding(settings = {}) {
 
     if (background_desktop) {
         document.body.style.background = `url("${background_desktop}") no-repeat center center fixed`;
-        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundSize = "cover";
     }
 
     if (text_color) {
@@ -29,7 +28,7 @@ function applyBranding(settings = {}) {
 
     let styleTag = document.getElementById(mobileBgStyleId);
     if (!styleTag) {
-        styleTag = document.createElement('style');
+        styleTag = document.createElement("style");
         styleTag.id = mobileBgStyleId;
         document.head.appendChild(styleTag);
     }
@@ -37,81 +36,67 @@ function applyBranding(settings = {}) {
     if (background_mobile) {
         styleTag.textContent = `@media (max-width: 768px) { body { background: #e3eaf6 url("${background_mobile}") no-repeat center center; background-size: cover; background-attachment: fixed; } }`;
     } else if (background_desktop) {
-        // Use desktop background on mobile if no dedicated asset provided
         styleTag.textContent = `@media (max-width: 768px) { body { background: url("${background_desktop}") no-repeat center center; background-size: cover; background-attachment: fixed; } }`;
     } else {
-        styleTag.textContent = '';
+        styleTag.textContent = "";
     }
 }
 
-// --- Load college data from JSON (by page slug) ---
 async function loadCollegeData() {
     try {
         currentSlug = resolveSlug();
-        if (!currentSlug) throw new Error('Missing college slug.');
+        if (!currentSlug) throw new Error("Missing college slug.");
 
-        const dataUrl = new URL('./colleges.json', import.meta.url);
-        const res = await fetch(dataUrl, { cache: 'no-store' });
+    const dataUrl = new URL("./colleges.json", import.meta.url);
+        const res = await fetch(dataUrl, { cache: "no-store" });
         if (!res.ok) throw new Error(`Failed to load colleges.json: ${res.status}`);
         const all = await res.json();
         const data = all[currentSlug];
         if (!data) {
             console.warn(`[Colleges] No data found for slug '${currentSlug}' in colleges.json`);
-            window.collegeCourses = { title_ar: '', title_en: '', courses: [] };
+            window.collegeCourses = { title_ar: "", title_en: "", courses: [] };
             return;
         }
         applyBranding(data);
         window.collegeCourses = data;
     } catch (err) {
-        console.error('[Colleges] Error loading college data:', err);
-        // Graceful fallback
+        console.error("[Colleges] Error loading college data:", err);
         if (!window.collegeCourses) {
-            window.collegeCourses = { title_ar: '', title_en: '', courses: [] };
+            window.collegeCourses = { title_ar: "", title_en: "", courses: [] };
         }
     }
 }
 
-// --- Switch Language ---
-window.switchLang = function(lang) {
-    currentLang = lang;
-    localStorage.setItem('lang', lang);
+window.switchLang = function (lang) {
+    currentLang = lang === "en" ? "en" : "ar";
+    localStorage.setItem("lang", currentLang);
 
-    const isAr = lang === 'ar';
-    document.documentElement.lang = lang;
-    document.documentElement.dir = isAr ? 'rtl' : 'ltr';
+    const isAr = currentLang === "ar";
+    document.documentElement.lang = currentLang;
+    document.documentElement.dir = isAr ? "rtl" : "ltr";
 
-    // Header
-    const titleEl = document.getElementById('main-title');
+    const titleEl = document.getElementById("main-title");
     if (titleEl && window.collegeCourses) {
         titleEl.textContent = isAr ? window.collegeCourses.title_ar : window.collegeCourses.title_en;
     }
     if (window.collegeCourses) {
         document.title = isAr ? window.collegeCourses.title_ar : window.collegeCourses.title_en;
     }
-    document.getElementById('nav-home').textContent = isAr ? 'الرئيسية' : 'Home';
-    document.getElementById('nav-courses').textContent = isAr ? 'المساقات' : 'Courses';
-    document.getElementById('nav-more').textContent = isAr ? 'المزيد ▾' : 'More ▾';
-    document.getElementById('nav-about').textContent = isAr ? 'من نحن' : 'About Us';
-    document.getElementById('nav-report').textContent = isAr ? 'الإبلاغ عن مشكلة' : 'Report a Problem';
-    document.getElementById('lang-label').textContent = isAr ? 'اللغة' : 'Language';
 
-    // Search input
-    const searchInput = document.getElementById('search-input');
-    if (searchInput) searchInput.placeholder = isAr ? 'بحث عن مادة' : 'Search for a course';
+    updateNavigationLabels(currentLang);
 
-    // Courses list
-    renderCourses(isAr ? 'ar' : 'en');
+    const searchInput = document.getElementById("search-input");
+    if (searchInput) searchInput.placeholder = isAr ? "بحث عن مادة" : "Search for a course";
 
-    // Footer
-    if (typeof renderFooter === 'function') renderFooter(lang);
+    renderCourses(isAr ? "ar" : "en");
 
-    // Close all dropdowns on language change
-    document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
-}
+    if (typeof renderFooter === "function") renderFooter(currentLang);
 
-// --- Render Courses List ---
+    document.querySelectorAll(".dropdown").forEach(d => d.classList.remove("open"));
+};
+
 function renderCourses(langKey) {
-    const ul = document.getElementById('courses-ul');
+    const ul = document.getElementById("courses-ul");
     if (!ul || !window.collegeCourses) return;
 
     const courses = Array.isArray(window.collegeCourses.courses) ? window.collegeCourses.courses : [];
@@ -119,24 +104,23 @@ function renderCourses(langKey) {
     ul.innerHTML = "";
 
     if (courses.length === 0) {
-        const emptyLi = document.createElement('li');
-        emptyLi.textContent = langKey === 'ar' ? 'لا توجد بيانات متاحة حالياً.' : 'No data available yet.';
+        const emptyLi = document.createElement("li");
+        emptyLi.textContent = langKey === "ar" ? "لا توجد بيانات متاحة حالياً." : "No data available yet.";
         ul.appendChild(emptyLi);
         return;
     }
 
     courses.forEach(c => {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
+        const li = document.createElement("li");
+        const a = document.createElement("a");
         a.href = c.url;
         a.target = "_blank";
-        a.textContent = c[langKey] || c.ar || c.en || '';
+        a.textContent = c[langKey] || c.ar || c.en || "";
         li.appendChild(a);
         ul.appendChild(li);
     });
 }
 
-// --- Search in this college ---
 function debounce(func, delay) {
     let timeout;
     return (...args) => {
@@ -146,16 +130,16 @@ function debounce(func, delay) {
 }
 
 function performSearch(query) {
-    const resultsContainer = document.getElementById('search-results');
-    const ul = document.getElementById('courses-ul');
+    const resultsContainer = document.getElementById("search-results");
+    const ul = document.getElementById("courses-ul");
     resultsContainer.innerHTML = "";
     if (!query || !window.collegeCourses || !Array.isArray(window.collegeCourses.courses)) {
         resultsContainer.style.display = "none";
         return;
     }
 
-    const isAr = currentLang === 'ar';
-    const key = isAr ? 'ar' : 'en';
+    const isAr = currentLang === "ar";
+    const key = isAr ? "ar" : "en";
 
     const matches = window.collegeCourses.courses.filter(item =>
         item[key].toLowerCase().includes(query.toLowerCase())
@@ -189,8 +173,8 @@ function performSearch(query) {
 }
 
 function initializeSearch() {
-    const searchInput = document.getElementById('search-input');
-    const resultsContainer = document.getElementById('search-results');
+    const searchInput = document.getElementById("search-input");
+    const resultsContainer = document.getElementById("search-results");
 
     if (searchInput) {
         searchInput.addEventListener("input", debounce(() => {
@@ -212,16 +196,16 @@ function initializeSearch() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
     (async () => {
         initializeHeader();
         initializeFooter();
         await loadCollegeData();
         initializeSearch();
-        switchLang(currentLang);
+        window.switchLang(currentLang);
         if (!window.collegeCourses || !window.collegeCourses.courses) {
-            const ul = document.getElementById('courses-ul');
-            if (ul) ul.innerHTML = `<li>${currentLang === 'ar' ? 'لا توجد بيانات متاحة حالياً.' : 'No data available yet.'}</li>`;
+            const ul = document.getElementById("courses-ul");
+            if (ul) ul.innerHTML = `<li>${currentLang === "ar" ? 'لا توجد بيانات متاحة حالياً.' : 'No data available yet.'}</li>`;
         }
     })();
 });

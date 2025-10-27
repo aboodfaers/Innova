@@ -1,5 +1,5 @@
 import { initializeFooter } from "./scripts/footer.js";
-import { initializeHeader } from "./scripts/header.js";
+import { initializeHeader, updateNavigationLabels } from "./scripts/header.js";
 
 // Get saved language or default to Arabic
 let currentLang = localStorage.getItem('lang') || 'ar';
@@ -7,7 +7,7 @@ let collegesMap = {};
 
 async function loadColleges() {
     try {
-        const res = await fetch('./Colleges/colleges.json', { cache: 'no-store' });
+    const res = await fetch('./scripts/colleges.json', { cache: 'no-store' });
         if (!res.ok) throw new Error(`Failed to load colleges.json: ${res.status}`);
         collegesMap = await res.json();
     } catch (error) {
@@ -30,7 +30,7 @@ function renderButtons() {
             btn.className = 'button';
             btn.textContent = currentLang === 'ar' ? (data.title_ar || slug) : (data.title_en || slug);
             btn.addEventListener('click', () => {
-                window.location.href = `Colleges/college.html?slug=${slug}`;
+                window.location.href = `./college.html?slug=${slug}`;
             });
             container.appendChild(btn);
         });
@@ -50,12 +50,7 @@ window.switchLang = function(lang) {
     // Header
     document.title = isAr ? 'مرجعي - الكليات' : 'Marja3i - Colleges';
     document.getElementById('main-title').textContent = isAr ? 'الكليات' : 'Colleges';
-    document.getElementById('nav-home').textContent = isAr ? 'الرئيسية' : 'Home';
-    document.getElementById('nav-courses').textContent = isAr ? 'المساقات' : 'Courses';
-    document.getElementById('nav-more').textContent = isAr ? 'المزيد ▾' : 'More ▾';
-    document.getElementById('nav-about').textContent = isAr ? 'من نحن' : 'About Us';
-    document.getElementById('nav-report').textContent = isAr ? 'الإبلاغ عن مشكلة' : 'Report a Problem';
-    document.getElementById('lang-label').textContent = isAr ? 'اللغة' : 'Language';
+    updateNavigationLabels(lang);
 
     renderButtons();
 
