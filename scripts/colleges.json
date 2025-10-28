@@ -1238,43 +1238,783 @@
   "engineering": {
     "title_ar": "كلية الهندسة",
     "title_en": "Engineering",
-    "courses": [
-      {
-        "ar": "أساسيات الهندسة",
-        "en": "Engineering Fundamentals",
-        "url": "#"
-      },
-      {
-        "ar": "الهندسة المدنية",
-        "en": "Civil Engineering",
-        "url": "#"
-      },
-      {
-        "ar": "الهندسة الكهربائية",
-        "en": "Electrical Engineering",
-        "url": "#"
-      },
-      {
-        "ar": "الهندسة الميكانيكية",
-        "en": "Mechanical Engineering",
-        "url": "#"
-      },
-      {
-        "ar": "الهندسة المعمارية",
-        "en": "Architectural Engineering",
-        "url": "#"
-      },
-      {
-        "ar": "الهندسة الصناعية",
-        "en": "Industrial Engineering",
-        "url": "#"
-      },
-      {
-        "ar": "الهندسة البيئية",
-        "en": "Environmental Engineering",
-        "url": "#"
-      }
-    ],
+      "courses": [
+        {
+        "ar": "اتصالات تناظرية", 
+          "en": "Analog Communications",
+          "url": "https://drive.google.com/drive/folders/1EFDodXNNLhnsU_PlvxIP16KE8LhFm4IO?usp=drive_link"
+        },
+        {
+          "ar": "اتصالات رقمية",
+          "en": "Digital Communications",
+          "url": "https://drive.google.com/drive/folders/1cYRbGekR4eTd_GeJSQRxDGzFIn8EMHlF?usp=drive_link"
+        },
+        {
+          "ar": "إدارة الخطر والنفايات الصلبة",
+          "en": "Risk and Solid Waste Management",
+          "url": "https://drive.google.com/drive/folders/1OftTVyJatQwRlUA355JfLZpTkaAtfrNa?usp=drive_link"
+        },
+        {
+          "ar": "اشارات وانظمة",
+          "en": "Signals and Systems",
+          "url": "https://drive.google.com/drive/folders/1c-QxjQO-FWRFIVMKcq_6r_yt6FtwOmrp?usp=drive_link"
+        },
+        {
+          "ar": "الاحتمالات والعمليات العشوائية",
+          "en": "Probability and Random Processes",
+          "url": "https://drive.google.com/drive/folders/1s6JOIPRng5kj6mbVtYcvMvbtcLJzZ_PR?usp=drive_link"
+        },
+        {
+          "ar": "التحكم الآلي",
+          "en": "Automatic Control",
+          "url": "https://drive.google.com/drive/folders/18mQErcouLauNNxyJ8j0MU6IBmH6Dgnd7?usp=drive_link"
+        },
+        {
+          "ar": "إلكترونيات (1)",
+          "en": "Electronics (1)",
+          "url": "https://drive.google.com/drive/folders/1InI1Fldwi-nXBQ3meSHgWdF886X0MbDV?usp=drive_link"
+        },
+        {
+          "ar": "إلكترونيات (2)",
+          "en": "Electronics (2)",
+          "url": "https://drive.google.com/drive/folders/1QVqIpBm0juKDMazEEHcdydpgkvD63cgi?usp=drive_link"
+        },
+        {
+          "ar": "إلكترونيات الاتصالات",
+          "en": "Communication Electronics",
+          "url": "https://drive.google.com/drive/folders/144lpM50WcBzMWrM8SgK4HTSMY5NsC3Ey?usp=drive_link"
+        },
+        {
+          "ar": "المصادر الطبيعية في الأردن",
+          "en": "Natural Resources in Jordan",
+          "url": "https://drive.google.com/drive/folders/1gxQPCdteeoOa3i7SIgv2InpLA0IjLu-l?usp=drive_link"
+        },
+        {
+          "ar": "تحليل إنشائي (2)",
+          "en": "Structural Analysis (2)",
+          "url": "https://drive.google.com/drive/folders/1huUN0FrQ113o2bt1YLi_Wix6Eoy8mZTK?usp=drive_link"
+        },
+        {
+          "ar": "تخطيط المواصلات",
+          "en": "Transportation Planning",
+          "url": "https://drive.google.com/drive/folders/1-6_HhS3tByU2CO3wEajSIhDgKktsJ7vp?usp=drive_link"
+        },
+        {
+          "ar": "تصميم طرق",
+          "en": "Road Design",
+          "url": "https://drive.google.com/drive/folders/1l7BcxAPjlcvyjI9OybzLf92JDF7WzE7p?usp=drive_link"
+        },
+        {
+          "ar": "تقييم الأثر البيئي",
+          "en": "Environmental Impact Assessment",
+          "url": "https://drive.google.com/drive/folders/10CB6kCwY_r7MRR923cfwgyYjH669EW5a?usp=drive_link"
+        },
+        {
+          "ar": "تلوث الهواء",
+          "en": "Air Pollution",
+          "url": "https://drive.google.com/drive/folders/1al5fmO9Mu3pPPRms0HgbFGcIE8eAMXmG?usp=drive_link"
+        },
+        {
+          "ar": "ديناميكا",
+          "en": "Dynamics",
+          "url": "https://drive.google.com/drive/folders/1PRbKRLHxBbY0DSzszkbAzVH1rL8jTmCW?usp=drive_link"
+        },
+        {
+          "ar": "شبكات الاتصالات والحواسيب",
+          "en": "Communication and Computer Networks",
+          "url": "https://drive.google.com/drive/folders/1zPM9PHSykwpBboDb6M6TJt6hQnO3pMZ-?usp=drive_link"
+        },
+        {
+          "ar": "كيمياء فيزيائية للمهندسين",
+          "en": "Physical Chemistry for Engineers",
+          "url": "https://drive.google.com/drive/folders/1ihQnXEnKNR1nGR3KTxy5L5njbg1m3hvX?usp=drive_link"
+        },
+        {
+          "ar": "مختبر الاتصالات الرقمية",
+          "en": "Digital Communications Lab",
+          "url": "https://drive.google.com/drive/folders/1t2Lc2fQbX87Mwv-cpSPkgyAQvhb9MOjD?usp=drive_link"
+        },
+        {
+          "ar": "مختبر الإلكترونيات الرقمية",
+          "en": "Digital Electronics Lab",
+          "url": "https://drive.google.com/drive/folders/184hl_hDhoWeZySe2lAWzzTFKXpeaHcQX?usp=drive_link"
+        },
+        {
+          "ar": "مختبر العمليات الموحدة",
+          "en": "Unified Operations Lab",
+          "url": "https://drive.google.com/drive/folders/1voeai8m4e6asnN4TwxXS2d182hTkkMkN?usp=drive_link"
+        },
+        {
+          "ar": "مختبر مساحة",
+          "en": "Surveying Lab",
+          "url": "https://drive.google.com/drive/folders/1ruv7nutfcNka3Tyr5dEqficBvIcQo99L?usp=drive_link"
+        },
+        {
+          "ar": "مختبر مواد إنشاء",
+          "en": "Construction Materials Lab",
+          "url": "https://drive.google.com/drive/folders/1YEOgHJytt0anGxbagFoeXxnhYIetQo01?usp=drive_link"
+        },
+        {
+          "ar": "مختبر هندسة صحية",
+          "en": "Sanitary Engineering Lab",
+          "url": "https://drive.google.com/drive/folders/1nWTVivv2ZvRFpCOalVMOP5PvqQO-wrqJ?usp=drive_link"
+        },
+        {
+          "ar": "مساحة (1)",
+           "en": "Surveying (1)",
+          "url": "https://drive.google.com/drive/folders/1KHmb_kM6kQ8eQTMcy1IAIOa8-f2kwW79?usp=drive_link"
+        },
+        {
+          "ar": "مساحة (2)",
+          "en": "Surveying (2)",
+          "url": "https://drive.google.com/drive/folders/1xHI2jX14AW8pqZmptS20JRxRxEWeV0JT?usp=drive_link"
+        },
+        {
+          "ar": "مشاغل هندسية",
+          "en": "Engineering Workshops",
+          "url": "https://drive.google.com/drive/folders/1jK1cTztrxtFFQcZkNaREcdrqd8IIEZib?usp=drive_link"
+        },
+        {
+          "ar": "معالجة المياه العادمة",
+          "en": "Wastewater Treatment",
+          "url": "https://drive.google.com/drive/folders/15RYdEIkNWHJxu9JlQroPXcyY1d8W_IrH?usp=drive_link"
+        },
+        {
+          "ar": "مقاومة مواد (2)",
+          "en": "Strength of Materials (2)",
+          "url": "https://drive.google.com/drive/folders/1MFwaSTzVp29Nir7RtSM4B53cRgnW2JLC?usp=drive_link"
+        },
+        {
+          "ar": "مواد وتصميم الرصفات",
+          "en": "Pavement Materials and Design",
+          "url": "https://drive.google.com/drive/folders/1JBDkHyieq8UL-CyqpDYjoyxGxuBD8vxq?usp=drive_link"
+        },
+        {
+          "ar": "هندسة أساسات (1)",
+          "en": "Foundation Engineering (1)",
+          "url": "https://drive.google.com/drive/folders/1lHrb6ako7HYKhI5MowQPApx51ouu8xKU?usp=drive_link"
+        },
+        {
+          "ar": "هندسة السيارات",
+          "en": "Automotive Engineering",
+          "url": "https://drive.google.com/drive/folders/1bS_1PKpVOtRRnXVAGIle-FP_lSrdMSHw?usp=drive_link"
+        },
+        {
+          "ar": "هندسة نوعية المياه و تزويدها",
+          "en": "Water Quality and Supply Engineering",
+          "url": "https://drive.google.com/drive/folders/1tJQLxyj4OfyYyJf2_-DIia9XadB8g75y?usp=drive_link"
+        },
+        {
+          "ar": "احتمالات وإحصاء هندسي",
+          "en": "Engineering Probability and Statistics",
+          "url": "https://drive.google.com/drive/folders/121GtqXLevyCJ42E9chOU18adS9Om_0-2?usp=drive_link"
+        },
+        {
+          "ar": "إدارة أعمال الصيانة والسلامة",
+          "en": "Maintenance and Safety Management",
+          "url": "https://drive.google.com/drive/folders/1OFrkERyPIe4xwzL3EgD43D_KWWMCsiam?usp=drive_link"
+        },
+        {
+          "ar": "إدارة الطاقة",
+          "en": "Energy Management",
+          "url": "https://drive.google.com/drive/folders/1PVbFx1V6mTkMx0qlESU-y5Gxar7R30gC?usp=drive_link"
+        },
+        {
+          "ar": "إدارة الكوارث البيئية",
+          "en": "Environmental Disaster Management",
+          "url": "https://drive.google.com/drive/folders/13xJEf5IAFlAUYno2EkQj9wOWr9Wfiz7L?usp=drive_link"
+        },
+        {
+          "ar": "إدارة المخاطر والاستدامة",
+          "en": "Risk and Sustainability Management",
+          "url": "https://drive.google.com/drive/folders/18ImSMAscjTWa3DV5maLlv9Fx_FSlZd6I?usp=drive_link"
+        },
+        {
+          "ar": "إدارة النفايات الصلبة",
+          "en": "Solid Waste Management",
+          "url": "https://drive.google.com/drive/folders/1Jf3u1ezkXYYsP2dpvGWnL5K3LKvXrYo8?usp=drive_link"
+        },
+        {
+          "ar": "إدارة مشاريع",
+          "en": "Project Management",
+          "url": "https://drive.google.com/drive/folders/1OoVVjhDuqjhROlGhTskelJEcAKR7PBUP?usp=drive_link"
+        },
+        {
+          "ar": "أساسيات أنظمة القدرة الكهربائية",
+          "en": "Fundamentals of Electrical Power Systems",
+          "url": "https://drive.google.com/drive/folders/1pYNB42wKueJ6kwVS6VnoL5k7boPa9PwU?usp=drive_link"
+        },
+        {
+          "ar": "استاتيكا",
+          "en": "Statics",
+          "url": "https://drive.google.com/drive/folders/1yhKa9l29S9EByXSoDtkgQxkoa_ggBscz?usp=drive_link"
+        },
+        {
+          "ar": "اقتصاد هندسي",
+          "en": "Engineering Economics",
+          "url": "https://drive.google.com/drive/folders/15By11qBJTZJ7__e5RDAh9AIjYjoEPvKi?usp=drive_link"
+        },
+        {
+          "ar": "الآلات التوربينية",
+          "en": "Turbine Machines",
+          "url": "https://drive.google.com/drive/folders/1tcbBBtSSbj86sGuGQ-tIkpAEbt3EhD7U?usp=drive_link"
+        },
+        {
+          "ar": "الآلات الكهربائية (1)",
+          "en": "Electrical Machines (1)",
+          "url": "https://drive.google.com/drive/folders/1Sa2pMNur8LWAYnwgHZJcL54yZJj-MxLC?usp=drive_link"
+        },
+        {
+          "ar": "الاستخدام المستدام للمواد وإدارتها",
+          "en": "Sustainable Use and Management of Materials",
+          "url": "https://drive.google.com/drive/folders/1h4b4YZj8TqwRY755T-bEzma88D0-cu-Q?usp=drive_link"
+        },
+        {
+          "ar": "الاقتصاد المستدام والإدارة",
+          "en": "Sustainable Economy and Management",
+          "url": "https://drive.google.com/drive/folders/1CEmpc73-y51qVJTq1Aow_pBdzwbLjnBp?usp=drive_link"
+        },
+        {
+          "ar": "الأنظمة الديناميكية والتحكم",
+          "en": "Dynamic Systems and Control",
+          "url": "https://drive.google.com/drive/folders/1GmWwIBD26DSExz3ehGkKYZlBoE4nfXBF?usp=drive_link"
+        },
+        {
+          "ar": "الاهتزازات الميكانيكية",
+          "en": "Mechanical Vibrations",
+          "url": "https://drive.google.com/drive/folders/1MDXeJj-7Dk1LWl55ePz0SLZTSlKlYesH?usp=drive_link"
+        },
+        {
+          "ar": "التحليل الآلي",
+          "en": "Automatic Analysis",
+          "url": "https://drive.google.com/drive/folders/1WxJBTzvlGSoIgHB96g4sG5P4HD4jA9Nh?usp=drive_link"
+        },
+        {
+          "ar": "التدفئة والتبريد وتكييف الهواء",
+          "en": "Heating, Cooling, and Air Conditioning",
+          "url": "https://drive.google.com/drive/folders/1tH-YSNGHTaOcYzvZTtM9XocCYfUVsysp?usp=drive_link"
+        },
+        {
+          "ar": "التصميم الميكانيكي (1)",
+          "en": "Mechanical Design (1)",
+          "url": "https://drive.google.com/drive/folders/1op23VfiHvF3oJurgC6L30Oc_LaNI176Q?usp=drive_link"
+        },
+        {
+          "ar": "التصميم الميكانيكي (2)",
+          "en": "Mechanical Design (2)",
+          "url": "https://drive.google.com/drive/folders/1xA036IW9K9sW4udyxfL2FbUi693pIb8j?usp=drive_link"
+        },
+        {
+          "ar": "التصميم بواسطة الحاسوب",
+          "en": "Computer-Aided Design",
+          "url": "https://drive.google.com/drive/folders/1H1F2pIX4td-2zmTkyNTweGgPbq25WoWZ?usp=drive_link"
+        },
+        {
+          "ar": "التنمية والبيئة",
+          "en": "Development and Environment",
+          "url": "https://drive.google.com/drive/folders/12ETStcDN01VSlIf8X07AskEg2zf1Jo6R?usp=drive_link"
+        },
+        {
+          "ar": "الجيولوجيا الهندسية",
+          "en": "Engineering Geology",
+          "url": "https://drive.google.com/drive/folders/1utsG8LdzyjU7VuO4zg3ZhdXOB47lv8wI?usp=drive_link"
+        },
+        {
+          "ar": "الخرسانة المسلحة (1)",
+          "en": "Reinforced Concrete (1)",
+          "url": "https://drive.google.com/drive/folders/1FGAVUK8I-WOgHCrUz2HJFu1X4joyvt-C?usp=drive_link"
+        },
+        {
+          "ar": "الدوائر والآلات الكهربائية",
+          "en": "Electrical Circuits and Machines",
+          "url": "https://drive.google.com/drive/folders/1lHLBBQvdJMSfcRDeCEZo6uGdwH5-pC1I?usp=drive_link"
+        },
+        {
+          "ar": "الديناميكا الحرارية",
+          "en": "Thermodynamics",
+          "url": "https://drive.google.com/drive/folders/1yjncoPVjsrNSdF7qZd9_vnk1Fs7FY90z?usp=drive_link"
+        },
+        {
+          "ar": "الطاقة الحرارية الأرضية",
+          "en": "Geothermal Energy",
+          "url": "https://drive.google.com/drive/folders/1xffAq3GyjZ5KG32iauuBJPzzYjiaIE1_?usp=drive_link"
+        },
+        {
+          "ar": "الطاقة والبيئة",
+          "en": "Energy and Environment",
+          "url": "https://drive.google.com/drive/folders/1TJ8PFgohu8ePwyrveWw3C8sMcGfGHK-B?usp=drive_link"
+        },
+        {
+          "ar": "المباني الخضراء",
+          "en": "Green Buildings",
+          "url": "https://drive.google.com/drive/folders/1-Rl5RjtOQFjIX0Rec2mObl34s8jSVLwM?usp=drive_link"
+        },
+        {
+          "ar": "المواصفات والعقود وحساب الكميات",
+          "en": "Specifications, Contracts, and Quantity Surveying",
+          "url": "https://drive.google.com/drive/folders/1dHQjWOUwAVfO86zjfq9Dr6Lyb1_ZJvJv?usp=drive_link"
+        },
+        {
+          "ar": "الهندسة الجيوتقنية",
+          "en": "Geotechnical Engineering",
+          "url": "https://drive.google.com/drive/folders/1hg7W6E38lGFP2MCSEOWQ25AVI4CJbl5a?usp=drive_link"
+        },
+        {
+          "ar": "الهندسة الخضراء والمرافق المستدامة",
+          "en": "Green Engineering and Sustainable Facilities",
+          "url": "https://drive.google.com/drive/folders/1IR4IAbLk_lVuqFEd_zIbozMVyx8sLWL9?usp=drive_link"
+        },
+        {
+          "ar": "الهندسة الصحية",
+          "en": "Sanitary Engineering",
+          "url": "https://drive.google.com/drive/folders/1Jujch3AikSSAMfCeRoPSrOMq26kdK_7T?usp=drive_link"
+        },
+        {
+          "ar": "انتقال الحرارة (1)",
+          "en": "Heat Transfer (1)",
+          "url": "https://drive.google.com/drive/folders/1bDEKmrb-rRRYwqVleRomd5idkd-_WJVx?usp=drive_link"
+        },
+        {
+          "ar": "انتقال المادة",
+          "en": "Mass Transfer",
+          "url": "https://drive.google.com/drive/folders/1WSkUIamivBwn8EZcvgSXiUdDdjum5A8H?usp=drive_link"
+        },
+        {
+          "ar": "إنشاء مباني",
+          "en": "Building Construction",
+          "url": "https://drive.google.com/drive/folders/1mMpHnjop7V-oPQquWVy2VmtQc0R4sR3m?usp=drive_link"
+        },
+        {
+          "ar": "أنظمة التحكم",
+          "en": "Control Systems",
+          "url": "https://drive.google.com/drive/folders/1km6JBM9YQvEYKAlEQwS_m0tKMUBDtVAz?usp=drive_link"
+        },
+        {
+          "ar": "أنظمة القوى الكهربائية (1)",
+          "en": "Electrical Power Systems (1)",
+          "url": "https://drive.google.com/drive/folders/1ZHBP3N41x4ggZx1MiA2U3j1-aIz8A-ji?usp=drive_link"
+        },
+        {
+          "ar": "برمجة الحاسوب للمهندسين",
+          "en": "Computer Programming for Engineers",
+          "url": "https://drive.google.com/drive/folders/1tk2X_gU4i4qJZL-uaU3pk3xn11ywX7K2?usp=drive_link"
+        },
+        {
+          "ar": "تحلية المياه",
+          "en": "Water Desalination",
+          "url": "https://drive.google.com/drive/folders/1TNsjLnuCzPCD3XqT1gkShTuzVadpnW7p?usp=drive_link"
+        },
+        {
+          "ar": "تحلية مياه البحر عن طريق الطاقة المتجددة",
+          "en": "Sea Water Desalination by Renewable Energy",
+          "url": "https://drive.google.com/drive/folders/1ILSwycaK0a0u5NiC5TnwPMBzUsphYUjF?usp=drive_link"
+        },
+        {
+          "ar": "تحليل عددي للمهندسين",
+          "en": "Numerical Analysis for Engineers",
+          "url": "https://drive.google.com/drive/folders/1d8o_dBY-BC7dhBze3JhImPU638G36WMO?usp=drive_link"
+        },
+        {
+          "ar": "تدامة المقدمة والخيارات التكنولوجيلة",
+          "en": "Sustainability: Introduction and Technological Options",
+          "url": "https://drive.google.com/drive/folders/1JBIc12vR_veNjKeadSE_lrCRmlBtAC1Q?usp=drive_link"
+        },
+        {
+          "ar": "تصميم المعدات",
+          "en": "Equipment Design",
+          "url": "https://drive.google.com/drive/folders/11_FpNp6toTq7ArESm2zE02lCfYxMeRrt?usp=drive_link"
+        },
+        {
+          "ar": "تصميم المناجم",
+          "en": "Mine Design",
+          "url": "https://drive.google.com/drive/folders/1zHlL-_4LtljThAmittUZSRVwos04S19q?usp=drive_link"
+        },
+        {
+          "ar": "تصميم منشآت معدنية",
+          "en": "Metal Structures Design",
+          "url": "https://drive.google.com/drive/folders/1H24detO8Bdz0m18ZFtmk4X2OT2wM-A2y?usp=drive_link"
+        },
+        {
+          "ar": "تطبيقات الحاسوب في الهندسة المدنية",
+          "en": "Computer Applications in Civil Engineering",
+          "url": "https://drive.google.com/drive/folders/1D1l9A3I7G1RqX_e8K_0jqX2mjdvDg0HY?usp=drive_link"
+        },
+        {
+          "ar": "خلية الوقود وإنتاج الهيدروجين",
+          "en": "Fuel Cell and Hydrogen Production",
+          "url": "https://drive.google.com/drive/folders/1sM09YnM1FAFoe3NgzTmhKFUFPODxEe7W?usp=drive_link"
+        },
+        {
+          "ar": "دارات كهربائية (1)",
+          "en": "Electric Circuits (1)",
+          "url": "https://drive.google.com/drive/folders/1ZSHgeg5MZEArY6HTTnWIBMJFG3AnFJyh?usp=drive_link"
+        },
+        {
+          "ar": "دارات كهربائية (2)",
+          "en": "Electric Circuits (2)",
+          "url": "https://drive.google.com/drive/folders/1Pbu1M17ftMJmjQCFKFFVqbj4boLEhL1a?usp=drive_link"
+        },
+        {
+          "ar": "ديناميات الموائع الحسابية (CFD)",
+          "en": "Computational Fluid Dynamics (CFD)",
+          "url": "https://drive.google.com/drive/folders/1mVhl3202FfoqlfhuxzObrXd83GgqZIbW?usp=drive_link"
+        },
+        {
+          "ar": "ديناميكا حرارية (1)",
+          "en": "Thermodynamics (1)",
+          "url": "https://drive.google.com/drive/folders/1F4BgZfAXXhSQGv7kVQVp0BW0GuNyLAJX?usp=drive_link"
+        },
+        {
+          "ar": "ديناميكا حرارية للهندسة الكيميائية",
+          "en": "Thermodynamics for Chemical Engineering",
+          "url": "https://drive.google.com/drive/folders/1De0zqge8dtz0yBv0D6CnODeVgjp2_WH0?usp=drive_link"
+        },
+        {
+          "ar": "ديناميكا عمليات وتحكم",
+          "en": "Process Dynamics and Control",
+          "url": "https://drive.google.com/drive/folders/1ORGNF8Jn8NxHQWeoNml7NxGIa7MWlwpL?usp=drive_link"
+        },
+        {
+          "ar": "ر الديناميكا الحرارية وانتقال الحرارة",
+          "en": "Thermodynamics and Heat Transfer",
+          "url": "https://drive.google.com/drive/folders/147ExBRT-gL_NSpAsC4uBJvJZ3QlucGMb?usp=drive_link"
+        },
+        {
+          "ar": "رسم آلات",
+          "en": "Machine Drawing",
+          "url": "https://drive.google.com/drive/folders/1hQ93Q79dBmP1mLfmnpXrpSjSvLzInE_C?usp=drive_link"
+        },
+        {
+          "ar": "رسم هندسي",
+          "en": "Engineering Drawing",
+          "url": "https://drive.google.com/drive/folders/1cmt_OJUoE_bIeKWr76hUSxe0f2h-oP-a?usp=drive_link"
+        },
+        {
+          "ar": "رياضيات هندسية (1)",
+          "en": "Engineering Mathematics (1)",
+          "url": "https://drive.google.com/drive/folders/1l_x6q9Vxdf9D9cHqh4aXhPD4fIhk_IVU?usp=drive_link"
+        },
+        {
+          "ar": "رياضيات هندسية (2)",
+          "en": "Engineering Mathematics (2)",
+          "url": "https://drive.google.com/drive/folders/15Ot1vC-YCKVFOGTYQDa6_mUdesn-s2Ej?usp=drive_link"
+        },
+        {
+          "ar": "طاقة الرياح",
+          "en": "Wind Energy",
+          "url": "https://drive.google.com/drive/folders/1FRjSs7YB_pActDnnIu2OEBWKDoBzNL35?usp=drive_link"
+        },
+        {
+          "ar": "علم الأحياء والتكنولوجيا الحيوية",
+          "en": "Biology and Biotechnology",
+          "url": "https://drive.google.com/drive/folders/1IvnUYBsk4BluXFaNoThvH7cX78jR4l5q?usp=drive_link"
+        },
+        {
+          "ar": "علم الأوبئة",
+          "en": "Epidemiology",
+          "url": "https://drive.google.com/drive/folders/1crmxiJWyHbw4YN0n-wq6Md0KVd-6KB-D?usp=drive_link"
+        },
+        {
+          "ar": "علم المبلمرات وتقنياتها",
+          "en": "Polymer Science and Technology",
+          "url": "https://drive.google.com/drive/folders/1Np854IspqBvi1xpAx6-voMzHJaA8j2Q_?usp=drive_link"
+        },
+        {
+          "ar": "علم المواد",
+          "en": "Materials Science",
+          "url": "https://drive.google.com/drive/folders/1zuo6T4LAK_MKpFemZ_DkVwb9e_7mM3Kd?usp=drive_link"
+        },
+        {
+          "ar": "عمليات الإنتاج (1)",
+          "en": "Production Processes (1)",
+          "url": "https://drive.google.com/drive/folders/13lX12DZT3589J1UjRJUmncRwIaxntKW2?usp=drive_link"
+        },
+        {
+          "ar": "عمليات التصميم في بيئة العمل",
+          "en": "Design Processes in the Work Environment",
+          "url": "https://drive.google.com/drive/folders/1NpkBcEBkgnbqAu_yCVWXIO8uzjMzc_97?usp=drive_link"
+        },
+        {
+          "ar": "عن بُعد ونظم المعلومات الجغرافية",
+          "en": "Remote Sensing and Geographic Information Systems",
+          "url": "https://drive.google.com/drive/folders/1KlxgLRue52ZJYLBBb4FQB5j-N2Ek1uoP?usp=drive_link"
+        },
+        {
+          "ar": "قضايا بيئية",
+          "en": "Environmental Issues",
+          "url": "https://drive.google.com/drive/folders/1JilTys08_vLyhSBTLSDkLLADrJqjjv3Z?usp=drive_link"
+        },
+        {
+          "ar": "كهرومغناطيسية (1)",
+          "en": "Electromagnetics (1)",
+          "url": "https://drive.google.com/drive/folders/1w51V4555UGY6je2iWBT22Tw82mGqddMj?usp=drive_link"
+        },
+        {
+          "ar": "كهرومغناطيسية (2)",
+          "en": "Electromagnetics (2)",
+          "url": "https://drive.google.com/drive/folders/1hFD0LvW4q3VysqJiFfIadr0DQhqvQ5BY?usp=drive_link"
+        },
+        {
+          "ar": "مبادئ السلامة العامة",
+          "en": "Principles of Public Safety",
+          "url": "https://drive.google.com/drive/folders/1X7zS7fPfvqI8LuUaEwf7yjsjUGQRizZd?usp=drive_link"
+        },
+        {
+          "ar": "مبادئ صيانة السيارات",
+          "en": "Principles of Car Maintenance",
+          "url": "https://drive.google.com/drive/folders/1nyLdolTZY2IVXKbFwCH_llwBh7V_L19C?usp=drive_link"
+        },
+        {
+          "ar": "مبادئ في الهندسة الكيميائية (1)",
+          "en": "Principles of Chemical Engineering (1)",
+          "url": "https://drive.google.com/drive/folders/1GWgh12eJMOFt2iRiUVnwuFiNlLkjgvjt?usp=drive_link"
+        },
+        {
+          "ar": "محركات احتراق داخلي",
+          "en": "Internal Combustion Engines",
+          "url": "https://drive.google.com/drive/folders/1q1WJ9CimNmu54rBoe8br2Wlv8gA7zUve?usp=drive_link"
+        },
+        {
+          "ar": "مختبر آلات كهربائية",
+          "en": "Electrical Machines Lab",
+          "url": "https://drive.google.com/drive/folders/1ra0mtwahNHaijftJmF1uxySSh8OQ3VM3?usp=drive_link"
+        },
+        {
+          "ar": "مختبر اتصالات",
+          "en": "Communications Lab",
+          "url": "https://drive.google.com/drive/folders/1Y7dVEOHBoAASkCyfHNMvp1Vt7AU1mlRi?usp=drive_link"
+        },
+        {
+          "ar": "مختبر الأجهزة والقياسات",
+          "en": "Devices and Measurements Lab",
+          "url": "https://drive.google.com/drive/folders/1DhSdUKeyFjadTVxEArsO-FqcGJSNXtnw?usp=drive_link"
+        },
+        {
+          "ar": "مختبر الإلكترونيات",
+          "en": "Electronics Lab",
+          "url": "https://drive.google.com/drive/folders/1lBkil889-GTj0HoZVOqvYiFNCmOsfj3W?usp=drive_link"
+        },
+        {
+          "ar": "مختبر الإنتاج والقياسات",
+          "en": "Production and Measurements Lab",
+          "url": "https://drive.google.com/drive/folders/1VNlHSZVCXcRDzhR1UMsTV8FLQ3TGSneL?usp=drive_link"
+        },
+        {
+          "ar": "مختبر التحكم",
+          "en": "Control Lab",
+          "url": "https://drive.google.com/drive/folders/1S5OumeKpk-SiK1gN4tG19J6pM_wqosS1?usp=drive_link"
+        },
+        {
+          "ar": "مختبر الجيولوجيا الهندسية",
+          "en": "Engineering Geology Lab",
+          "url": "https://drive.google.com/drive/folders/1rdRJzo0ejmiKyjanI9ysvq3UTmP9dc-s?usp=drive_link"
+        },
+        {
+          "ar": "مختبر الدارات الكهربائية",
+          "en": "Electric Circuits Lab",
+          "url": "https://drive.google.com/drive/folders/17h10n8fbIzr77fGWqeppQw7ZsQo8JqK4?usp=drive_link"
+        },
+        {
+          "ar": "مختبر الديناميكا الحرارية وانتقال الحرارة",
+          "en": "Thermodynamics and Heat Transfer Lab",
+          "url": "https://drive.google.com/drive/folders/1SIgZiGbJE-X0zxZujAj8AH_rMahecQHO?usp=drive_link"
+        },
+        {
+          "ar": "مختبر الطاقة الحيوية",
+          "en": "Bioenergy Lab",
+          "url": "https://drive.google.com/drive/folders/1G2e4T44DGAfSZi7IdBQjYxOIjYdl_mIJ?usp=drive_link"
+        },
+        {
+          "ar": "مختبر الطاقة المتجددة",
+          "en": "Renewable Energy Lab",
+          "url": "https://drive.google.com/drive/folders/1wk4lHLoe1Lqtay8T4FgQXAm3XG5FFC5D?usp=drive_link"
+        },
+        {
+          "ar": "مختبر القوى الكهربائية",
+          "en": "Electric Power Lab",
+          "url": "https://drive.google.com/drive/folders/1-cDEayuko7kTPpJl-WhkUwVCnr_ZaoPq?usp=drive_link"
+        },
+        {
+          "ar": "مختبر القياسات والأجهزة الهندسية",
+          "en": "Engineering Devices and Measurements Lab",
+          "url": "https://drive.google.com/drive/folders/19vuXYFjUswHZugF6P-sqeaFzA4z2ZtYG?usp=drive_link"
+        },
+        {
+          "ar": "مختبر الموائع والهيدروليكا",
+          "en": "Fluid and Hydraulics Lab",
+          "url": "https://drive.google.com/drive/folders/1FpHlDxV1HJyBd6OHJ3dbxEsEQvCalnPx?usp=drive_link"
+        },
+        {
+          "ar": "مختبر أنظمة التحكم",
+          "en": "Control Systems Lab",
+          "url": "https://drive.google.com/drive/folders/1QF-Ar1Q-tHmEA9LTNOVlrvCy0Eq_4_si?usp=drive_link"
+        },
+        {
+          "ar": "مختبر تصميم طرق",
+          "en": "Road Design Lab",
+          "url": "https://drive.google.com/drive/folders/1PelfTdKIWbjX61iP3k0lKCFTO39yVb3m?usp=drive_link"
+        },
+        {
+          "ar": "مختبر تطبيقات هندسية",
+          "en": "Engineering Applications Lab",
+          "url": "https://drive.google.com/drive/folders/1ZH9NRFOIb0RAS1JZeD2PsbTNSfnTa_z-?usp=drive_link"
+        },
+        {
+          "ar": "مختبر ديناميات الموائع الحسابية (CFD)",
+          "en": "CFD Lab",
+          "url": "https://drive.google.com/drive/folders/1sbQ0fgQ6g_JWo_YDnNjUCAYywQzTUQHw?usp=drive_link"
+        },
+        {
+          "ar": "مختبر ديناميكا حرارية",
+          "en": "Thermodynamics Lab",
+          "url": "https://drive.google.com/drive/folders/1M0yJF18_kgG4ojUZ017NpN00PHcvkGPa?usp=drive_link"
+        },
+        {
+          "ar": "مختبر علم المعادن",
+          "en": "Mineralogy Lab",
+          "url": "https://drive.google.com/drive/folders/11l64ycFuT4Ty2VbMwo9szwIxs-Glo7sh?usp=drive_link"
+        },
+        {
+          "ar": "مختبر محركات الاحتراق الداخلي",
+          "en": "Internal Combustion Engines Lab",
+          "url": "https://drive.google.com/drive/folders/10_FpeRDDPEBmyFaKZCIg6mCP8-3weOWA?usp=drive_link"
+        },
+        {
+          "ar": "مختبر مقاومة المواد",
+          "en": "Strength of Materials Lab",
+          "url": "https://drive.google.com/drive/folders/1tcmkacR7froAsLAiqKXjun3deg9G3clX?usp=drive_link"
+        },
+        {
+          "ar": "مختبر ميكانيكا الصخور والتربة",
+          "en": "Rock and Soil Mechanics Lab",
+          "url": "https://drive.google.com/drive/folders/12e2mPb-Eu8NmeGNrlgdb0Xt_-fuROjuP?usp=drive_link"
+        },
+        {
+          "ar": "مختبر ميكانيكا الموائع",
+          "en": "Fluid Mechanics Lab",
+          "url": "https://drive.google.com/drive/folders/16oOseVifkYvzzMby_nEK96xNHZgpKdji?usp=drive_link"
+        },
+        {
+          "ar": "مختبر نظرية الآلات",
+          "en": "Theory of Machines Lab",
+          "url": "https://drive.google.com/drive/folders/1cHjw-VVYYIvl_MHZjiqPn0NR6m-Za5_G?usp=drive_link"
+        },
+        {
+          "ar": "مختبر هندسة التفاعلات الكيميائية",
+          "en": "Chemical Reaction Engineering Lab",
+          "url": "https://drive.google.com/drive/folders/1Ty0YQbM2NqHBmhjLJLPM-nBz5Z0FpBwb?usp=drive_link"
+        },
+        {
+          "ar": "مختبر هندسة الجيوتقنية",
+          "en": "Geotechnical Engineering Lab",
+          "url": "https://drive.google.com/drive/folders/1fLOPtHSRxHTkyDBhkfIQz0SYpfpgrLEK?usp=drive_link"
+        },
+        {
+          "ar": "مدخل للهندسة",
+          "en": "Introduction to Engineering",
+          "url": "https://drive.google.com/drive/folders/1kwEVwlvyqi8vuR0kpZ-Uz02BST_j-0dk?usp=drive_link"
+        },
+        {
+          "ar": "معالجة الإشارات الرقمية",
+          "en": "Digital Signal Processing",
+          "url": "https://drive.google.com/drive/folders/1uhuEvbPjVaaZ_meUVV9ySbyDCuGazjUR?usp=drive_link"
+        },
+        {
+          "ar": "معالجة الخامات المعدنية (1)",
+          "en": "Mineral Processing (1)",
+          "url": "https://drive.google.com/drive/folders/1AXRmfnkqDjLNAiD_RZ7SYHcJm7hX-jvr?usp=drive_link"
+        },
+        {
+          "ar": "مقاومة المواد (1)",
+          "en": "Strength of Materials (1)",
+          "url": "https://drive.google.com/drive/folders/1OoV5oZkIffnK9SEMsC-Pzg0GhqIsf316?usp=drive_link"
+        },
+        {
+          "ar": "مقدمة في التصميم الميكانيكي",
+          "en": "Introduction to Mechanical Design",
+          "url": "https://drive.google.com/drive/folders/173X-twwVs4BYngohVMTgpnONkkoWNOOI?usp=drive_link"
+        },
+        {
+          "ar": "مهارات اتصال",
+          "en": "Communication Skills",
+          "url": "https://drive.google.com/drive/folders/1uRRSTUuMYDgwgczFxC32nWsnYslo4-1g?usp=drive_link"
+        },
+        {
+          "ar": "مواد إنشاء",
+          "en": "Construction Materials",
+          "url": "https://drive.google.com/drive/folders/1knMU2VyGqSAW6EzubEDf1u2qvZ0kC2_9?usp=drive_link"
+        },
+        {
+          "ar": "مواضيع مختارة في الهندسة المدنية",
+          "en": "Selected Topics in Civil Engineering",
+          "url": "https://drive.google.com/drive/folders/1VivFwGkzLuDCX6fiyzwUc5QW_0HwGHhM?usp=drive_link"
+        },
+        {
+          "ar": "موضوعات خاصة في هندسة البيئة",
+          "en": "Special Topics in Environmental Engineering",
+          "url": "https://drive.google.com/drive/folders/1JMKuibnyo3BND2dDkARXx9x1f771lxf2?usp=drive_link"
+        },
+        {
+          "ar": "ميكانيكا الصخور والتربة",
+          "en": "Rock and Soil Mechanics",
+          "url": "https://drive.google.com/drive/folders/1bYAd2nbN7V-mqllkJJ6nUiBlglk7AEEc?usp=drive_link"
+        },
+        {
+          "ar": "ميكانيكا الموائع",
+          "en": "Fluid Mechanics",
+          "url": "https://drive.google.com/drive/folders/1m9sg7BDXEC3AEouFho0van0B2Lc_2k9O?usp=drive_link"
+        },
+        {
+          "ar": "ميكانيكا الموائع (1)",
+          "en": "Fluid Mechanics (1)",
+          "url": "https://drive.google.com/drive/folders/1-wJJwjJwqxXDjaCk1SfPmuwnhJi8SfWb?usp=drive_link"
+        },
+        {
+          "ar": "ميكانيكا هندسية",
+          "en": "Engineering Mechanics",
+          "url": "https://drive.google.com/drive/folders/1HFkkDmzWucIzo-L8d2WKEyMTLx_0aXW6?usp=drive_link"
+        },
+        {
+          "ar": "هندسة استخراج البترول",
+          "en": "Petroleum Engineering",
+          "url": "https://drive.google.com/drive/folders/14hl5JBmV1ybYpPGiX6ovDP5NF1xHui3s?usp=drive_link"
+        },
+        {
+          "ar": "هندسة التفاعلات الكيميائية (2)",
+          "en": "Chemical Reaction Engineering (2)",
+          "url": "https://drive.google.com/drive/folders/1ZH_QnSyb9fKcS3j-EN_3KoR5sCHuCQqE?usp=drive_link"
+        },
+        {
+          "ar": "هندسة السلامة",
+          "en": "Safety Engineering",
+          "url": "https://drive.google.com/drive/folders/19V0gKxslKqLz_PC_TROHJu6zHLwW_StJ?usp=drive_link"
+        },
+        {
+          "ar": "هندسة السلامة في المناجم",
+          "en": "Mine Safety Engineering",
+          "url": "https://drive.google.com/drive/folders/17dBG0qi4ZYFaxlsMRbI4fpFxqWYI5VfC?usp=drive_link"
+        },
+        {
+          "ar": "هندسة السيارات",
+          "en": "Automotive Engineering",
+          "url": "https://drive.google.com/drive/folders/1RHSVNaBJv11QtWFfRZW2CONTJrOJWY6Z?usp=drive_link"
+        },
+        {
+          "ar": "هندسة الهيدروجيولوجيا",
+          "en": "Hydrogeology Engineering",
+          "url": "https://drive.google.com/drive/folders/1gHrL1hXudVptcwihWGgn6I3nuTHMyVEo?usp=drive_link"
+        },
+        {
+          "ar": "هندسة جسور",
+          "en": "Bridge Engineering",
+          "url": "https://drive.google.com/drive/folders/10vGKm_a4hPv6xdXGtlrEi75EpQWbMbsm?usp=drive_link"
+        },
+        {
+          "ar": "هندسة مواصلات",
+          "en": "Transportation Engineering",
+          "url": "https://drive.google.com/drive/folders/17IIHMeAiLagHtPzNcAtex94BjQGk6A5Z?usp=drive_link"
+        }
+      ],
     "order": 5,
     "background_desktop": "../images/backgroundeng.jpg",
     "background_mobile": "../images/backgroundengf.jpg"
@@ -2141,6 +2881,56 @@
   "mks": {
     "title_ar": "الخطة الدراسية",
     "title_en": "Study plan",
+    "courses": [    
+        {
+        "ar": " خطة كلية الاثار",
+        "en": "Faculty of Archeology Plan",
+        "url": "https://drive.google.com/drive/folders/1AUxwnP68Ol0PtHTpobkquxHDBCiRLMc_?usp=drive_link"
+      },
+      {
+        "ar": "خطة كلية الاداب",
+        "en": "Faculty of Arts Plan",
+        "url": "https://drive.google.com/drive/folders/1EpINLycw9hSwg_JrlJazyd0VSHz-SOgd?usp=drive_link "
+      },
+            {
+        "ar": "خطة كلية  الاعمال",
+        "en": "Faculty of Business Plan",
+        "url": "https://drive.google.com/drive/folders/10tY0ri8P6cdaGybLYgGJS4BVOrZzzi8Z?usp=drive_link"
+      },
+            {
+        "ar": "خطة كلية تكنولوجيا المعلومات",
+        "en": "Faculty of Information Technology Plan",
+        "url": "https://drive.google.com/drive/folders/1vro2j3XqRuSJakZSNet0RRXplz7AeXWb?usp=drive_link"
+      },
+            {
+        "ar": "خطة كلية التمريض",
+        "en": "Faculty of Nursing Plan",
+        "url": "https://drive.google.com/drive/folders/1oLYSrdZqGQ7gfU1FM8HOpn3-zrlx1_5B?usp=drive_lin"
+      },
+            {
+        "ar": "خطة كلية العلوم",
+        "en": "Faculty of Science Plan",
+        "url": "https://drive.google.com/drive/folders/11Q9IahNxjA6rW9aRWoODJD4ykW619dlS?usp=drive_link"
+      },
+                  {
+        "ar": "خطة كلية القانون",
+        "en": "Faculty of Law Plan",
+        "url": "https://drive.google.com/drive/folders/1m5oUaDznMuX5KcCbf1PIMvroPhzpdGxr?usp=drive_link"
+      },
+                  {
+        "ar": "خطة كلية الهندسه",
+        "en": "Faculty of Engineering Plan",
+        "url": "https://drive.google.com/drive/folders/1jbc_RuJDr-myq7l6KsM-KrS7yZ_qaoR9?usp=drive_link"
+      },
+            {
+        "ar": "خطة كلية العلوم تربوية",
+        "en": "Faculty of Educational Science Plan",
+        "url": "https://drive.google.com/drive/folders/1AEyqxieec4npSALeLxATiCGqndNSRuaV?usp=drive_link"
+      }
+
+
+
+    ],
     "order": 11,
     "background_desktop": "../images/cbs.png"
   }
