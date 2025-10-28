@@ -2223,39 +2223,55 @@
     "title_en": "Business Administration",
     "courses": [
       {
-        "ar": "أساسيات إدارة الأعمال",
-        "en": "Business Fundamentals",
-        "url": "#"
+        "ar": "الاقتصاد الزراعي",
+        "en": "Agricultural Economics",
+        "url": "https://drive.google.com/drive/folders/1i3nwojlNPzWlghCJnAVAtBZoLbiCDZet?usp=drive_link"
       },
       {
-        "ar": "إدارة التسويق",
-        "en": "Marketing Management",
-        "url": "#"
+        "ar": "إمحاسبة المنشات المتخصصة",
+        "en": "Specialized Facilities Accounting",
+        "url": "https://drive.google.com/drive/folders/1OuAErk514WaSLM2P1I5mOKNMU5o16-H-?usp=drive_link"
       },
       {
-        "ar": "إدارة الموارد البشرية",
+        "ar": "إمبادئ نظم المعلومات الاداريه",
         "en": "Human Resource Management",
-        "url": "#"
+        "url": "https://drive.google.com/drive/folders/14Iw58lPNDZRZ7GIyGyCFXYSPTYdmQBBP?usp=drive_link"
       },
       {
-        "ar": "إدارة العمليات",
-        "en": "Operations Management",
-        "url": "#"
+        "ar": "طرق إحصائية في الاقتصاد",
+        "en": "Statistical Methods in Economics",
+        "url": "https://drive.google.com/drive/folders/1rCyxpJpMSe5XY_Zi6f_FMcQvBgNmxm_2?usp=drive_link"
       },
       {
-        "ar": "إدارة المشاريع",
-        "en": "Project Management",
-        "url": "#"
+        "ar": "مبادئ الاقتصاد الجزئي",
+        "en": "Principles of Microeconomics",
+        "url": "https://drive.google.com/drive/folders/1W7KRLxj1QXSTlZTQzgkhVcHSABFj5F49?usp=drive_link"
       },
       {
-        "ar": "إدارة الابتكار",
-        "en": "Innovation Management",
-        "url": "#"
+        "ar": "كتاب أسس المحاسبة ",
+        "en": "Fundamentals of Accounting",
+        "url": "https://drive.google.com/drive/folders/1NIpHa0IX90UN-XS4MxYv7jiNBIVaUIst?usp=drive_link"
       },
       {
-        "ar": "إدارة المخاطر",
-        "en": "Risk Management",
-        "url": "#"
+        "ar": " النظرية-الاقتصادية",
+        "en": "Economic Theory",
+        "url": "https://drive.google.com/drive/folders/1fEEZRxUHeWqKZrTWACDWJFkbWd7L0Mf8?usp=drive_link"
+      },     
+       {
+        "ar": "محاسبة ادارية",
+        "en": "Managerial Accounting",
+        "url": "https://drive.google.com/drive/folders/12R0F8r7mnssNVqHzDFCJ92IQAxnkeG10?usp=drive_link"
+      },
+             {
+        "ar": "مبدئ تسويق",
+        "en": "Principles of Marketing",
+        "url": "https://drive.google.com/drive/folders/143t_60AvLZne-UM1GKGi0lwMrrNcS9kL?usp=drive_link"
+      },
+
+      {
+        "ar": "برمجة بايثون (2)",
+        "en": "Python Programming (2)",
+        "url": "https://drive.google.com/drive/folders/1o3POFwU1DUVf7xXugIkGRDMMZ6nwLoLk?usp=drive_link"
       }
     ],
     "order": 8,
