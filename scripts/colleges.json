@@ -1283,41 +1283,7 @@
     "title_ar": " كلية الآداب",
     "title_en": "College of literature",
     "courses": [
-      {
-        "ar": "أساسيات الأدب",
-        "en": "Literature Fundamentals",
-        "url": "#"
-      },
-      {
-        "ar": "الأدب العربي",
-        "en": "Arabic Literature",
-        "url": "#"
-      },
-      {
-        "ar": "الأدب الإنجليزي",
-        "en": "English Literature",
-        "url": "#"
-      },
-      {
-        "ar": "الأدب المقارن",
-        "en": "Comparative Literature",
-        "url": "#"
-      },
-      {
-        "ar": "تمريض الحالات الحرجة",
-        "en": "Critical Care Nursing",
-        "url": "#"
-      },
-      {
-        "ar": "تمريض الصحة النفسية",
-        "en": "Mental Health Nursing",
-        "url": "#"
-      },
-      {
-        "ar": "تمريض الأمومة",
-        "en": "Maternity Nursing",
-        "url": "#"
-      }
+
     ],
     "order": 6,
     "background_desktop": "../images/backgroundart.png",

@@ -5,15 +5,19 @@ const aboutContent = {
   ar: {
     title: "من نحن",
     paragraphs: [
-      "نحن فريق شغوف يسعى لتسهيل الأمور باستخدام التكنولوجيا، نعمل على تطوير وابتكار حلول رقمية تلبي احتياجات المستخدمين وتسهل حياتهم اليومية من خلال محتوى عصري ومبتكر يسهل على الجميع استخدامه والاعتياد عليه.",
-      "ونؤمن بأن النجاح يبدأ من الفكرة الصحيحة، لذلك نركز على الإبداع والعمل الجماعي والمسؤولية في كل ما نقدمه."
+      "<span class=\"brand\">فريق Innova</span> — نحن فريق شغوف يسعى لتسهيل الأمور باستخدام التكنولوجيا. نعمل على تطوير وابتكار حلول رقمية تلبي احتياجات الطلاب وتسهل حياتهم الدراسية من خلال محتوى عصري ومُبتكر يسهل على الجميع التعامل معه.",
+      "<span class=\"brand\">مرجعي</span> هو أوّل موقع جامعي إلكتروني في الجنوب الأردني، صُمّم خصيصًا لطلبة جامعة الحسين بن طلال. يهدف الموقع إلى توفير مكتبة طلابية إلكترونية تجمع المواد الدراسية لجميع التخصّصات، مع خطط دراسية ومراجع منظّمة تساعد الطالب في مسيرته الأكاديمية.",
+      "نسعى لتبسيط عمليّة الدراسة وتوفير مصادر موثوقة وسهلة الوصول، سواء قبل الامتحانات أو أثناء الفصل الدراسي؛ لنكون المرجع الأوّل لكل طالب يبحث عن التنظيم والضمان والتميّز في دراسته الجامعية.",
+      "نؤمن بأن النجاح يبدأ من الفكرة الصحيحة؛ لذلك نركّز على الإبداع والعمل الجماعي والمسؤولية في كل ما نقدّمه."
     ]
   },
   en: {
     title: "About Us",
     paragraphs: [
-      "We are a passionate team focused on making life easier through technology. We develop and innovate digital solutions that meet user needs and simplify everyday life with modern, creative content that everyone can easily use and grow comfortable with.",
-      "We believe that success starts with the right idea, so we emphasize creativity, teamwork, and responsibility in everything we deliver."
+      "<span class=\"brand\">Innova Team</span> — we are a passionate team dedicated to making study life easier through technology. We develop and innovate digital solutions and student-focused content that simplify learning and daily academic tasks.",
+      "<span class=\"brand\">Marja3i</span> is the first university portal in southern Jordan, designed especially for Al-Hussein Bin Talal University students. The site provides an electronic student library that gathers course materials across majors, along with organized study plans and references to support students' academic journeys.",
+      "We aim to simplify the study process and provide reliable, easily accessible resources — whether before exams or during the semester — to be the first reference for every student seeking organization, assurance, and excellence in their university studies.",
+      "We believe success starts with the right idea; therefore we focus on creativity, teamwork, and responsibility in everything we provide."
     ]
   }
 };
@@ -32,7 +36,8 @@ function renderContent(lang) {
   paragraphsEl.innerHTML = "";
   data.paragraphs.forEach(text => {
     const p = document.createElement("p");
-    p.textContent = text;
+    // paragraphs may contain simple HTML (for emphasis), render as HTML
+    p.innerHTML = text;
     paragraphsEl.appendChild(p);
   });
 }
