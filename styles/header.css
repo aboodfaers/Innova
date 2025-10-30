@@ -101,13 +101,14 @@ nav a:hover {
 }
 
 html[dir="rtl"] .nav-toggle {
-    margin-left: 12px;
-    margin-right: 0;
+    margin-right: 16px;
 }
 
 @media (max-width: 900px) {
+    
     .logo {
         flex: 1;
+        gap: 14px;
     }
 
     .nav-toggle {
