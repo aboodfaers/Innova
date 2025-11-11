@@ -405,8 +405,8 @@
       }
     ],
     "order": 1,
-    "background_desktop": "../images/backgroundnus.png",
-    "background_mobile": "../images/backgroundnusf.png"
+    "background_desktop": "../images/backgroundnus.webp",
+    "background_mobile": "../images/backgroundnusf.webp"
   },
   "education": {
     "title_ar": "كلية العلوم التربية",
@@ -799,8 +799,8 @@
       }
     ],
     "order": 2,
-    "background_desktop": "../images/backgroundedu.png",
-    "background_mobile": "../images/backgroundeduf.png"
+    "background_desktop": "../images/backgroundedu.webp",
+    "background_mobile": "../images/backgroundeduf.webp"
   },
   "tourism": {
     "title_ar": "كلية الاثار",
@@ -2026,8 +2026,8 @@
 
     ],
     "order": 6,
-    "background_desktop": "../images/backgroundart.png",
-    "background_mobile": "../images/backgroundartf.png"
+    "background_desktop": "../images/backgroundart.webp",
+    "background_mobile": "../images/backgroundartf.webp"
   },
   "law": {
     "title_ar": "كلية القانون",
@@ -2215,8 +2215,8 @@
       }
     ],
     "order": 7,
-    "background_desktop": "../images/backgroundlaw.png",
-    "background_mobile": "../images/backgroundlawf.png"
+    "background_desktop": "../images/backgroundlaw.webp",
+    "background_mobile": "../images/backgroundlawf.webp"
   },
   "business": {
     "title_ar": "كلية إدارة الأعمال",
@@ -2275,8 +2275,8 @@
       }
     ],
     "order": 8,
-    "background_desktop": "../images/backgroundbus.png",
-    "background_mobile": "../images/backgroundbusf.png"
+    "background_desktop": "../images/backgroundbus.webp",
+    "background_mobile": "../images/backgroundbusf.webp"
   },
   "science": {
     "title_ar": "كلية العلوم",
@@ -2892,7 +2892,7 @@
     "title_en": "Exams simulation",
     "courses": [],
     "order": 10,
-    "background_desktop": "../images/cbs.png"
+    "background_desktop": "../images/cbs.webp"
   },
   "mks": {
     "title_ar": "الخطة الدراسية",
@@ -2948,6 +2948,6 @@
 
     ],
     "order": 11,
-    "background_desktop": "../images/cbs.png"
+    "background_desktop": "../images/cbs.webp"
   }
 }
